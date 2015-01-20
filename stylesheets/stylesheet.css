@@ -53,7 +53,7 @@ body {
   color:#373737;
   background: #212121;
   font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  font-family: proxima-nova,sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -139,13 +139,7 @@ img {
   max-width: 739px;
   padding: 5px;
   margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb;
 
-  box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px #ebebeb;
-  -moz-box-shadow: 0 0 5px #ebebeb;
-  -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
 }
 
 p img {
@@ -266,9 +260,31 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 920px;
   padding: 20px 10px;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #7ecabe;
+  padding-bottom: 2px;
+}
+
+.inner .icon, .inner .text {
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+
+.inner .icon {
+  padding-right:40px;
+}
+
+.inner .icon img {
+  width:500px;
 }
 
 #forkme_banner {
@@ -287,12 +303,7 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
+  background: #7ecabe;
 }
 
 #header_wrap .inner {
@@ -356,8 +367,6 @@ Full-Width Styles
 
 #main_content_wrap {
   background: #f2f2f2;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
 }
 
 #main_content {
@@ -384,8 +393,11 @@ Small Device Styles
   }
 
   .inner {
-    min-width: 320px;
-    max-width: 480px;
+    max-width: 68em;
+    margin: 0 auto;
+    display: table;
+    vertical-align: middle;
+    padding: 2em;
   }
 
   #project_title {
@@ -423,3 +435,28 @@ Small Device Styles
   }
 
 }
+
+/* Custom 2015, Web Semantics, Inc. */ 
+
+.nav {
+  /*float:right;*/
+  margin-top: 60px;
+  display: inline-block;
+  top: -30px;
+  position: absolute;
+}
+
+.nav a {
+  color:#101010;
+   cursor: pointer;
+   font-weight:bold;
+   text-decoration: none;
+   padding-right: 30px;
+}
+
+.nav a:hover {
+   text-decoration: none;
+     color:#505050;
+
+}
+
