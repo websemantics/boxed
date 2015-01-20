@@ -31,7 +31,7 @@
               </div>
 
                 <h1>Boxed</h1>
-                <p>Lightweight Boilerplate Generator that does not require the Command-line Interface (CLI), for the Visually-oriented Developers</p>
+                <p>Lightweight Boilerplate Generator that does not require the Command-line Interface (CLI), for the Visually-oriented Developers.</p>
 
                 <!-- Place this tag where you want the button to render. -->
                 <a class="github-button" href="https://github.com/websemantics/boxed" data-icon="octicon-star" data-count-href="/websemantics/boxed/stargazers" data-count-api="/repos/websemantics/boxed#stargazers_count">Star</a>
@@ -105,9 +105,20 @@
 
 <p>However, most of these tools depends on the Command-line Interface (CLI), requiring the user to install software on their machines and interacte with a Text-based Console.</p>
 
-<p>This is not entirely a bad idea, however, for it can be an overkills for some Scenarios where configurations for the traget platform are minimum. Boxed in designed to help for such situations</p>
+<p>This is not entirely a bad idea, however, it can be an overkills for some scenarios where configurations for the traget extentsion or module are minimum. Boxed is designed to help for such situations</p>
 
 <h3><a class="anchor" id="get-started" href="#get-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Get Started.</h3>
+
+<p>Select the desired  target, fill-in the details, download.</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3><a class="anchor" id="get-started" href="#get-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Include Your Repo.</h3>
 
 <p>All you have to do to use Boxed, is to make a pull request after you include the information of your project in the project.json file in the root folder of this project.</p>
 
@@ -135,6 +146,46 @@ $ git checkout gh-pages
 
         <script type="text/javascript" src="javascripts/zipjs/zip.js"></script>
         <script type="text/javascript" src="javascripts/main.js"></script>
+
+        <script src="javascripts/vendors/jquery-2.1.0.min.js"></script>
+        <script src="javascripts/vendors/underscore-min.js"></script>
+        <script src="javascripts/gh3.js"></script>
+
+          <script>
+
+            var k33g = new Gh3.User("k33g");
+
+            var k33gBlog = new Gh3.Repository("k33g.github.com", k33g);
+
+            k33gBlog.fetch(function (err, res) {
+            if(err) { throw "outch ..." }
+
+                k33gBlog.fetchBranches(function (err, res) {
+                if(err) { throw "outch ..." }
+
+                var master = k33gBlog.getBranchByName("master");
+
+          var myfile = master.getFileByName("index.html");
+
+          console.log("index.html", myfile);
+
+                /*
+
+                var myfile = master.getFileByName("index.html");
+
+                console.log(myfile);
+
+                myfile.fetchContent(function (err, res) {
+                  if(err) { throw "outch ..." }
+                  console.log(myfile.getRawContent());
+                });
+                */
+
+              })
+            });
+
+          </script>
+
 
           <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
