@@ -6,10 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Boxed : Customize Your Addons">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/alpaca.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/item.min.css">
 
-    <title>Boxed</title>
+    <title>Boxed : Customize & Go</title>
 
+    <script id="package-template" type="text/x-handlebars-template">
+      <div class="ui items">
+          <div class="item">
+            <div class="image">
+              <img src="{{img_url}}">
+            </div>
+            <div class="content">
+              <a class="header">{{label}}</a>
+              <div class="description">{{description}}.
+              </div>
+              <div class="extra">
+                {{#each tags}}
+                <span class="label label-info">{{this}}</span>
+                {{/each}}
+              </div>
+              <div class="extra">
+                    <a class="github-button" href="https://github.com/{{user}}/{{repo_name}}" data-icon="octicon-star" data-count-href="/{{user}}/{{repo_name}}/stargazers" data-count-api="/repos/{{user}}/{{repo_name}}#stargazers_count">Star</a>
+
+                    <a class="github-button" href="https://github.com/{{user}}/{{repo_name}}" data-icon="octicon-git-branch" data-count-href="/{{user}}/{{repo_name}}/network" data-count-api="/repos/{{user}}/{{repo_name}}#forks_count">Fork</a>
+                    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+    </script>
   </head>
 
   <body>
@@ -20,7 +48,7 @@
         <header class="inner">
             <div class="icon">
                 <a href="https://github.com/websemantics/boxed">
-                  <img src="images/boxed-logo.svg">
+                  <img src="img/boxed-logo.svg">
                 </a>
             </div>
             <div class="text">
@@ -31,14 +59,12 @@
               </div>
 
                 <h1>Boxed</h1>
-                <p>Lightweight Boilerplate Generator that does not require the Command-line Interface (CLI), for the Visually-oriented Developers.</p>
+                <p>Lightweight Boilerplate Generator that does not require the Command-line Interface (CLI) to customize software addons and packages, for the Visually-oriented Developers.</p>
 
                 <!-- Place this tag where you want the button to render. -->
                 <a class="github-button" href="https://github.com/websemantics/boxed" data-icon="octicon-star" data-count-href="/websemantics/boxed/stargazers" data-count-api="/repos/websemantics/boxed#stargazers_count">Star</a>
 
                 <a class="github-button" href="https://github.com/websemantics/boxed" data-icon="octicon-git-branch" data-count-href="/websemantics/boxed/network" data-count-api="/repos/websemantics/boxed#forks_count">Fork</a>
-
-                <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
             </div>
 
         </header>
@@ -48,79 +74,43 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-
-
-
-
-
-
-
-
-
-
-    <div class="description">
-      A JavaScript library to zip and unzip files
-      <hr>
-    </div>
-    
-    <h2>Read a zip file demo</h2>
-    
-    <ol id="demo-container">
-      <li>
-        <label>
-          <span class="form-label">choose a zip file</span>
-          <input type="file" accept="application/zip" id="file-input">
-        </label>
-      </li>
-      <li>
-        <label>
-          <span class="form-label">choose temporary storage</span>
-          <select id="creation-method-input">
-            <option value="Blob">RAM</option>
-            <option value="File">HDD</option>
-          </select>
-        </label>
-      </li>
-      <li>
-        <span class="form-label">download zip content</span>
-          <pre><code id="file-list">
-          </pre></code>
-      </li>
-    </ol>
-
-
-
-
-
-
-
-
-
-
-
         <h3>
-<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview.</h3>
+        <a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview.</h3>
 
-<p>Developers have many tools that helps them stay productive and to kickstart new projects, generate packages, modules, addons and extenstions. <a href="http://yeoman.io/">Yoeman</a>, is a great example of such tools, to scaffold modern apps</p>
+        <p>Developers have many tools to help them stay productive and to kickstart new projects, generate packages, modules, addons and extenstions. <a href="http://yeoman.io/">Yoeman</a>, is a great example of such tools, to scaffold modern apps</p>
 
-<p>However, most of these tools depends on the Command-line Interface (CLI), requiring the user to install software on their machines and interacte with a Text-based Console.</p>
+        <p>However, most of these tools depends on the Command-line Interface (CLI), requiring the user to install software on their machines and interacte with a Text-based Console.</p>
 
-<p>This is not entirely a bad idea, however, it can be an overkills for some scenarios where configurations for the traget extentsion or module are minimum. Boxed is designed to help for such situations</p>
+        <p>This is not entirely a bad idea, however, it can be an overkills for some scenarios where configurations for the traget extentsion or module are minimum. Boxed is designed to help for such situations</p>
 
-<h3><a class="anchor" id="get-started" href="#get-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Get Started.</h3>
+  <div class="paper">
+        <h3><a class="anchor" id="get-started" href="#get-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Get Started.</h3>
 
-<p>Select the desired  target, fill-in the details, download.</p>
+        <p>Select the desired target addon, package, extension or an html theme, fill-in the details, download, enjoy!.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+         <div class="form-group">
+          <select class="form-control" id="repos">
+          <option>Select a package</option>
+          </select>
+        </div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+        <div id="package">
+          <div id="details"></div>
+          <div class="well">
+            <form></form>
+            <div>
+              <button id="download" class="btn btn-large btn-success">Download</button>
+            </div>
+          </div>
+        </div>
+  </div>
 
 <h3><a class="anchor" id="get-started" href="#get-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Include Your Repo.</h3>
 
-<p>All you have to do to use Boxed, is to make a pull request after you include the information of your project in the project.json file in the root folder of this project.</p>
+<p>You like the idea and want to offer your own addons? All you have to do to use Boxed, is to fork the project
+
+
+  make a pull request after you include the information of your project in the project.json file in the root folder of this project.</p>
 
 <pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
@@ -132,7 +122,7 @@ $ git checkout gh-pages
 <h3>
 <a id="contact-us" class="anchor" href="#contact-us" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact Us</h3>
 
-<p>Have a question? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@websemantics.ca">support@websemantics.ca</a> and we’ll get back to you as soon as possible.</p>
+<p>Have a question?  contact <a href="mailto:support@websemantics.ca">support@websemantics.ca</a> and we’ll get back to you as soon as possible.</p>
       </section>
     </div>
           <!-- FOOTER  -->
@@ -144,59 +134,106 @@ $ git checkout gh-pages
             </footer>
           </div>
 
-        <script type="text/javascript" src="javascripts/zipjs/zip.js"></script>
-        <script type="text/javascript" src="javascripts/main.js"></script>
-
-        <script src="javascripts/vendors/jquery-2.1.0.min.js"></script>
-        <script src="javascripts/vendors/underscore-min.js"></script>
-        <script src="javascripts/gh3.js"></script>
-
-          <script>
-
-            var k33g = new Gh3.User("k33g");
-
-            var k33gBlog = new Gh3.Repository("k33g.github.com", k33g);
-
-            k33gBlog.fetch(function (err, res) {
-            if(err) { throw "outch ..." }
-
-                k33gBlog.fetchBranches(function (err, res) {
-                if(err) { throw "outch ..." }
-
-                var master = k33gBlog.getBranchByName("master");
-
-          var myfile = master.getFileByName("index.html");
-
-          console.log("index.html", myfile);
-
-                /*
-
-                var myfile = master.getFileByName("index.html");
-
-                console.log(myfile);
-
-                myfile.fetchContent(function (err, res) {
-                  if(err) { throw "outch ..." }
-                  console.log(myfile.getRawContent());
-                });
-                */
-
-              })
-            });
-
-          </script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/handlebars.min.js"></script>
+  <script type="text/javascript" src="js/alpaca.min.js"></script>
+  <script type="text/javascript" src="js/zipjs/zip.js"></script>
+  <script type="text/javascript" src="js/github.js"></script>
+  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="repos.json"></script>
+  <script src="js/github.js"></script>
 
 
-          <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-58713429-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+  <script>
+   
+   var template   = Handlebars.compile($("#package-template").html());
+
+   var current_repo = null;
+
+   var repos = [];
+
+   $( document ).ready(function() {
+      
+      $('#package').hide();
+      
+      $('#download').prop('disabled', true);
+
+
+      // Loop through all the repos and read repo infos
+      for (var i in files)
+        addRepo(files[i]);
+
+      // On change, set the current repo
+      $( "#repos" ).change(function(event) {
+        
+        current_repo = repos[this.value];
+
+          $('form').empty();
+          $('#details').html('');
+          $('#package').hide();
+          $('#download').prop('disabled', true);
+
+        if(current_repo){
+
+          var repo_url_parts =  current_repo.github_url.split("/");
+          var len = repo_url_parts.length;
+          current_repo.user = repo_url_parts[len-2];
+          current_repo.repo_name = repo_url_parts[len-1];
+          current_repo.img_url = current_repo.img_url || 'img/box-bw.svg';
+
+          $('#package').show();
+          $('#details').html(template(current_repo));
+          $('#download').prop('disabled', false);
+          $('form').alpaca(current_repo.form);
+        } 
+
+      });
+    });
+
+   // Download handler
+   $('#download').on('click', function(event) {
+      console.log(current_repo);
+    });
+
+
+
+  // Add select option to the repos list
+  function addRepo(file_name){
+
+        var file = './repos/' + file_name + '.json';
+
+        $.getJSON(file, {file:file})
+          .done(function( json ) {
+            
+            // Store globally
+            repos[file_name] = json;
+
+            // Insert new select option
+            $('#repos').append($("<option></option>").attr("value",file_name).text(json.label)); 
+
+          })
+          .fail(function( jqxhr, textStatus, error ) {
+            var err = textStatus + ", " + error;
+            console.log( "Request Failed: " + err );
+          });
+
+
+  }
+
+    </script>
+
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-58713429-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
 
 
   </body>

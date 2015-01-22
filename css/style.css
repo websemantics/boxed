@@ -1,0 +1,193 @@
+/*******************************************************************************
+Slate Theme for GitHub Pages
+by Jason Costello, @jsncostello
+*******************************************************************************/
+
+/*******************************************************************************
+Theme Styles
+*******************************************************************************/
+
+body {
+  box-sizing: border-box;
+  color:#373737;
+  background: #212121;
+  font-size: 16px;
+  font-family: proxima-nova,sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*******************************************************************************
+Full-Width Styles
+*******************************************************************************/
+
+.outer {
+  width: 100%;
+}
+
+.inner {
+  position: relative;
+  max-width: 920px;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #7ecabe;
+  padding-bottom: 2px;
+}
+
+.inner .icon, .inner .text {
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+
+.inner .icon {
+  padding-right:40px;
+}
+
+.inner .icon img {
+  width:500px;
+}
+
+#header_wrap {
+  background: #7ecabe;
+}
+
+#header_wrap .inner {
+  padding: 50px 10px 30px 10px;
+}
+
+#main_content_wrap {
+  background: #eeeeee;
+}
+
+#footer_wrap {
+  background: #212121;
+  color:#ffffff;
+}
+
+/*******************************************************************************
+Small Device Styles
+*******************************************************************************/
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size:14px;
+  }
+
+  .inner {
+    max-width: 68em;
+    margin: 0 auto;
+    display: table;
+    vertical-align: middle;
+    padding: 2em;
+  }
+
+  #project_title {
+  font-size: 32px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+
+}
+
+/* Custom 2015, Web Semantics, Inc. */ 
+
+.nav {
+  /*float:right;*/
+  margin-top: 60px;
+  display: inline-block;
+  top: -30px;
+  position: absolute;
+}
+
+.nav a {
+  color:#101010;
+   cursor: pointer;
+   font-weight:bold;
+   text-decoration: none;
+   padding-right: 30px;
+}
+
+.nav a:hover {
+   text-decoration: none;
+     color:#505050;
+
+}
+
+.bs-form {
+  margin-right: 0;
+  margin-left: 0;
+  background-color: #fff;
+  border-color: #ddd;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* Custom */
+
+.paper {
+  position: relative;
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #fafafa;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.3),0 0 40px rgba(128,128,128,.1)inset;
+  box-shadow: 0 1px 4px rgba(0,0,0,.3),0 0 40px rgba(128,128,128,.1)inset;
+}
+
+#details {
+  padding:20px 0px;
+}
+
+#details .extra a {
+  color:white;
+}
+
+/* Custom for Alpaca */
+
+legend.alpaca-container-label {
+padding-bottom: 10px;
+}
+
+/* Custom Item */
+
+.ui.items .item .content{
+  vertical-align: bottom!important;
+}

@@ -3,4 +3,8 @@
 Instant Sprite is open source under MIT License.  See LICENSE.
 
 ## Open Source projects used
-* gh3 - https://github.com/k33g/gh3
+* github - https://github.com/michael/github
+* alpaca - https://github.com/gitana/alpaca
+* jquery - https://github.com/jquery/jquery
+* underscore - https://github.com/jashkenas/underscore
+* bootstrap - https://github.com/twbs/bootstrap

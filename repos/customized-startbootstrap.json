@@ -1,0 +1,19 @@
+{
+  "label": "A one page HTML theme for freelancers created by Start Bootstrap",
+  "description": "Freelancer is a one page freelancer portfolio theme for Bootstrap created by Start Bootstrap. This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, and a working PHP contact form",
+  "github_url" : "https://github.com/websemantics/customized-startbootstrap",
+  "img_url" : "http://startbootstrap.com/assets/img/templates/freelancer.jpg",
+  "tags" : ["html", "booststrap", "theme"],
+  "form" : { 
+            "schema": {
+            "title": "Enter the details below and download a one page theme (index.html)",
+            "type": "object",
+            "properties": {
+            "title": {
+                "type": "string",
+                "title": "Title"
+            }
+            }
+          }
+        }
+}

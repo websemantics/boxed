@@ -1,0 +1,23 @@
+{
+  "label": "Pyro 3 Module",
+  "description":"An example module to illustrate the usage of pyro 3 module",
+  "github_url" : "https://github.com/anomalylabs/example-module",
+  "tags" : ["pyrocms3", "laravel5", "addon"],
+  "form" : { 
+			  			"schema": {
+                "title":"Enter the details then download an copy to 'app/addons' folder",
+				        "type": "object",
+				        "properties": {
+			            "name": {
+			                "type": "string",
+			                "title": "Name"
+			            },
+			            "ranking": {
+			                "type": "string",
+			                "title": "Ranking",
+			                "enum": ["excellent", "not too shabby", "alpaca built my hotrod"]
+			            }
+				        }
+				      }
+  					}
+}
