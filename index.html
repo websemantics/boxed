@@ -44,7 +44,6 @@
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-
         <header class="inner">
             <div class="icon">
                 <a href="https://github.com/websemantics/boxed">
@@ -53,9 +52,8 @@
             </div>
             <div class="text">
               <div class="nav">
-                <a href="#overview">Overview</a>
                 <a href="#get-started">Get Started</a>
-                <a href="#contact-us">Contact Us</a>
+                <a href="#overview">Overview</a>
               </div>
 
                 <h1>Boxed</h1>
@@ -71,22 +69,14 @@
     </div>
 
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
 
-        <h3>
-        <a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview.</h3>
-
-        <p>Developers have many tools to help them stay productive and to kickstart new projects, generate packages, modules, addons and extenstions. <a href="http://yeoman.io/">Yoeman</a>, is a great example of such tools, to scaffold modern apps</p>
-
-        <p>However, most of these tools depends on the Command-line Interface (CLI), requiring the user to install software on their machines and interacte with a Text-based Console.</p>
-
-        <p>This is not entirely a bad idea, however, it can be an overkills for some scenarios where configurations for the traget extentsion or module are minimum. Boxed is designed to help for such situations</p>
+    <div class="outer">
+      <section class="inner">
 
   <div class="paper">
         <h3><a class="anchor" id="get-started" href="#get-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Get Started.</h3>
 
-        <p>Select the desired target addon, package, extension or an html theme, fill-in the details, download, enjoy!.</p>
+        <p>Select the desired target addon, package, extension or an html theme you want to use in your project, fill-in the details, customize and generate the code, downalod and enjoy!.</p>
 
          <div class="form-group">
           <select class="form-control" id="repos">
@@ -98,31 +88,51 @@
           <div id="details"></div>
           <div class="well">
             <form></form>
-            <div>
-              <button id="download" class="btn btn-large btn-success">Download</button>
+
+            <div class="gen-footer">
+            
+            <div class="progress">
+              <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                0%
+              </div>
+            </div>
+
+            <a id="generate" class="btn btn-large btn-success">Generate</a>
+
+            <a id="download" class="pull-right">Download</a>
             </div>
           </div>
         </div>
-  </div>
+      </div>
 
-<h3><a class="anchor" id="get-started" href="#get-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Include Your Repo.</h3>
+        <h3>
+        <a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h3>
 
-<p>You like the idea and want to offer your own addons? All you have to do to use Boxed, is to fork the project
+        <p>Developers have many tools to help them stay productive and to kickstart new projects, generate packages, modules, addons and extenstions. <a href="http://yeoman.io/">Yoeman</a>, is a great example of such tools, to scaffold modern apps.</p>
+
+        <p>However, most of these tools depends on the Command-line Interface (CLI), requiring the user to install software on their machines and interacte with a Text-based Console.</p>
+
+        <p>This is not entirely a bad idea, however, it can be an overkills for some scenarios where configurations for the traget extentsion or module are minimum or for people who prefer having a visual interface to interact with. On the flip coin, if you have a package or a module to distribute, Boxed will help you to turn your Github repositiores into living templates.</p>
+
+        <p>If you like the idea and want to offer your own addons, all you have to do to use Boxed is to <a href="https://github.com/websemantics/boxed">fork the project</a> then add the details of your module / addon in the <span class="label label-default">repos</span> folder follwoing the example of the exisiting packages. Boxed uses <a href="https://github.com/gitana/alpaca">Alpaca</a> to generate the forms and <a href="https://github.com/wycats/handlebars.js/">handlebarsjs</a> as template engine. Use handlebarsjs to transform your repositoy to a template where you speciy few placeholders the user can fill-in using the Alpaca auto-generated forms. Boxed will download your repo to the user browser and replace all the handlebarsjs placeholders found in your project's files with the values sepecified by the user. It will then compress the result and initiate download. Your users will love you for making their lives so easy.
 
 
-  make a pull request after you include the information of your project in the project.json file in the root folder of this project.</p>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'boxed-generator'; // required: replace example with your forum shortname
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
-<h3>
-<a id="contact-us" class="anchor" href="#contact-us" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact Us</h3>
-
-<p>Have a question?  contact <a href="mailto:support@websemantics.ca">support@websemantics.ca</a> and we’ll get back to you as soon as possible.</p>
       </section>
     </div>
           <!-- FOOTER  -->
@@ -133,7 +143,6 @@ $ git checkout gh-pages
                         </a></p>
             </footer>
           </div>
-
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/handlebars.min.js"></script>
@@ -145,25 +154,28 @@ $ git checkout gh-pages
   <script type="text/javascript" src="repos.json"></script>
   <script src="js/github.js"></script>
 
-
   <script>
-   
+
+   // Warning: The code is a mess, pre-alpha
+
    var template   = Handlebars.compile($("#package-template").html());
+       zip.workerScriptsPath = "js/zipjs/";
 
    var current_repo = null;
 
    var repos = [];
 
+   var current_form = null;
+
    $( document ).ready(function() {
       
       $('#package').hide();
-      
-      $('#download').prop('disabled', true);
-
+      $('#download').hide();
+      $('#generate').prop('disabled', true);
 
       // Loop through all the repos and read repo infos
-      for (var i in files)
-        addRepo(files[i]);
+      for (var i in repos_files)
+        addRepo(repos_files[i]);
 
       // On change, set the current repo
       $( "#repos" ).change(function(event) {
@@ -172,32 +184,26 @@ $ git checkout gh-pages
 
           $('form').empty();
           $('#details').html('');
+          $('#download').hide();
           $('#package').hide();
-          $('#download').prop('disabled', true);
+          $('#generate').prop('disabled', true);
+          $('.progress-bar').css('width', '0%').attr('aria-valuenow', 0).text('0%');    
 
         if(current_repo){
-
-          var repo_url_parts =  current_repo.github_url.split("/");
-          var len = repo_url_parts.length;
-          current_repo.user = repo_url_parts[len-2];
-          current_repo.repo_name = repo_url_parts[len-1];
-          current_repo.img_url = current_repo.img_url || 'img/box-bw.svg';
-
           $('#package').show();
           $('#details').html(template(current_repo));
-          $('#download').prop('disabled', false);
-          $('form').alpaca(current_repo.form);
+          $('#generate').prop('disabled', false);
+          current_form = $('form').alpaca(current_repo.form);
         } 
 
       });
     });
 
    // Download handler
-   $('#download').on('click', function(event) {
-      console.log(current_repo);
+   $('#generate').on('click', function(event) {
+      var box = new Boxed(current_repo, current_form);
+          box.compileAndDownload();
     });
-
-
 
   // Add select option to the repos list
   function addRepo(file_name){
@@ -205,13 +211,28 @@ $ git checkout gh-pages
         var file = './repos/' + file_name + '.json';
 
         $.getJSON(file, {file:file})
-          .done(function( json ) {
+          .done(function( repo ) {
             
+            // Set default values
+            var repo_url_parts =  repo.github_url.split("/");
+            var len = repo_url_parts.length;
+
+            repo.user      = repo_url_parts[len-2];
+            repo.repo_name = repo_url_parts[len-1];
+            repo.img_url   = repo.img_url || 'img/box-bw.svg';
+            repo.branch    = repo.branch || 'master';
+            repo.path      = repo.path || "./";
+            repo.accept    = repo.accept || "*";
+
+            repo.form.postRender = function(renderedForm){
+              repo.renderedForm = renderedForm;
+            }
+
             // Store globally
-            repos[file_name] = json;
+            repos[file_name] = repo;
 
             // Insert new select option
-            $('#repos').append($("<option></option>").attr("value",file_name).text(json.label)); 
+            $('#repos').append($("<option></option>").attr("value",file_name).text(repo.label)); 
 
           })
           .fail(function( jqxhr, textStatus, error ) {
@@ -219,11 +240,9 @@ $ git checkout gh-pages
             console.log( "Request Failed: " + err );
           });
 
-
   }
 
     </script>
-
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -234,7 +253,5 @@ $ git checkout gh-pages
       pageTracker._trackPageview();
       } catch(err) {}
     </script>
-
-
   </body>
 </html>

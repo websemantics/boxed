@@ -1,23 +1,96 @@
 {
-  "label": "Pyro 3 Module",
+  "label": "PyroCMS 3 Module",
   "description":"An example module to illustrate the usage of pyro 3 module",
-  "github_url" : "https://github.com/anomalylabs/example-module",
+  "github_url" : "https://github.com/websemantics/example-module",
   "tags" : ["pyrocms3", "laravel5", "addon"],
   "form" : { 
-			  			"schema": {
-                "title":"Enter the details then download an copy to 'app/addons' folder",
-				        "type": "object",
-				        "properties": {
-			            "name": {
-			                "type": "string",
-			                "title": "Name"
-			            },
-			            "ranking": {
-			                "type": "string",
-			                "title": "Ranking",
-			                "enum": ["excellent", "not too shabby", "alpaca built my hotrod"]
-			            }
-				        }
-				      }
-  					}
+			  		"schema": {
+                        "title":"Configure your PyroCMS module, generate and dowbload to your project",
+                        "description":"What do you think about Alpaca?",
+                        "type":"object",
+                        "properties": {
+                            "package_name": {
+                                "type":"string",
+                                "title":"Package Name"
+                            },
+                            "module_name": {
+                                "type":"string",
+                                "title":"Module Name"
+                            },
+                            "description": {
+                                "type":"string",
+                                "title":"Description"
+                            },
+                            "namespace": {
+                                "type":"string",
+                                "title":"Namespace"
+                            },
+                            "author_name": {
+                                "type":"string",
+                                "title":"Author Name"
+                            },
+                            "email": {
+                                "type":"string",
+                                "title":"Email"
+                            },
+                            "homepage": {
+                                "type":"string",
+                                "title":"Homepage"
+                            },
+                            "license": {
+                                "type":"string",
+                                "title":"License",
+                                "enum":["MIT","GPL","LGPL"]
+                            }
+                        }
+                    },
+                    "options": {
+                        "fields": {
+                            "package_name": {
+                                "size": 40,
+                                "placeholder": "Enter composer package name"
+                            },
+                            "module_name": {
+                                "size": 40,
+                                "placeholder": "Enter module name"
+                            },
+                            "description" : {
+                                "type": "textarea",
+                                "rows": 2,
+                                "cols": 40
+                            },
+                            "namespace" : {
+                                "size": 40,
+                                "placeholder": "Enter module's Namespace"
+                            },
+                            "author_name" : {
+                                "size": 40,
+                                "placeholder": "Enter author name"
+                            },
+                            "email" : {
+                                "size": 40,
+                                "placeholder": "Enter your email"
+                            },
+                            "homepage" : {
+                                "placeholder": "Enter homepage URL"
+                            },
+                            "license": {
+                                "type": "select",
+                                "optionLabels": ["MIT license", "GNU General Public License (GPL)", "Lesser General Public License (LGPL)"]
+                            }
+                        }
+                    },                    
+                    "data": {
+                        "package_name": "anomaly/example-module",
+                        "module_name": "Example Module",
+                        "description": "This is an example module for demonstration purposes only.",
+                        "license": "MIT",
+                        "namespace": "Anomaly\\ExampleModule\\",
+                        "author_name": "AnomalyLabs, Inc.",
+                        "email": "hello@anomaly.is",
+                        "homepage": "http://anomaly.is/"
+
+                    }
+
+  		}
 }

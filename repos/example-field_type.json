@@ -1,5 +1,5 @@
 {
-  "label": "Pyro 3 Field Type",
+  "label": "PyroCMS 3 Field Type",
   "description":"An example module to illustrate the usage of pyro 3 field type",
   "github_url" : "https://github.com/anomalylabs/example-module",
   "tags" : ["pyrocms3", "laravel5", "addon"],

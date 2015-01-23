@@ -863,12 +863,8 @@
 	}
 
 	var DEFAULT_WORKER_SCRIPTS = {
-		// deflater: ['javascripts/zipjs/z-worker.js', 'deflate.js'],
-		// inflater: ['javascripts/zipjs/z-worker.js', 'inflate.js']
-		
-		// Modfied by Adnan, 17 Jan 2015
-		deflater: ['javascripts/zipjs/z-worker.js', 'deflate.js'],
-		inflater: ['javascripts/zipjs/z-worker.js', 'inflate.js']
+		deflater: ['z-worker.js', 'deflate.js'],
+		inflater: ['z-worker.js', 'inflate.js']
 	};
 	function createWorker(type, callback, onerror) {
 		if (obj.zip.workerScripts !== null && obj.zip.workerScriptsPath !== null) {
