@@ -1,7 +1,7 @@
 
 ## Overview
 
-Box is a lightweight Boilerplate Generator that does not require the Command-line Interface (CLI) to customize software addons and packages, for the Visually-oriented Developers.
+Boxed is a lightweight Boilerplate Generator that does not require the Command-line Interface (CLI) to customize software addons and packages, for the Visually-oriented Developers.
 
 Boxed can help you provide customizable Software Packages of your platform (modules, addons, extensions etc) to other developers in a visually appealing way, no more command line! 
 

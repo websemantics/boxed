@@ -158,10 +158,17 @@
 
    // Warning: The code is a mess, pre-alpha
 
+
+  Handlebars.registerHelper('toLowerCase', function(str) {
+    return str.toLowerCase();
+  });
+
    var template   = Handlebars.compile($("#package-template").html());
        zip.workerScriptsPath = "js/zipjs/";
 
    var current_repo = null;
+
+   var current_repo_id = null;
 
    var repos = [];
 
@@ -180,7 +187,8 @@
       // On change, set the current repo
       $( "#repos" ).change(function(event) {
         
-        current_repo = repos[this.value];
+        current_repo_id = this.value;
+        current_repo = repos[current_repo_id];
 
           $('form').empty();
           $('#details').html('');
@@ -201,7 +209,7 @@
 
    // Download handler
    $('#generate').on('click', function(event) {
-      var box = new Boxed(current_repo, current_form);
+      var box = new Boxed(current_repo_id, current_repo, current_form);
           box.compileAndDownload();
     });
 

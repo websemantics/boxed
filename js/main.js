@@ -13,9 +13,9 @@ var obj = this;
 
 (function() {
 
-  var Boxed = function(repo, form) {
+  var Boxed = function(repo_id, repo, form) {
 
-    var zipFileEntry, zipWriter, writer, URL = obj.webkitURL || obj.mozURL || obj.URL;
+    var zipWriter, writer, URL = obj.webkitURL || obj.mozURL || obj.URL;
     
     var self = this;
 
@@ -51,12 +51,16 @@ var obj = this;
           }, function(file) {
               // Parse file content
               
-              var template   = Handlebars.compile(file.data);
-              file.data = template(formValues);
+                var path_template   = Handlebars.compile(file.path);
+                file.path = path_template(formValues);
+
+                if(file.data){
+                  var data_template = Handlebars.compile(file.data);
+                  file.data = data_template(formValues);
+                }
 
           }, function(fileIndex, totalFiles, sizePresent, totalSize) {
               // OnProgress
-              console.log(fileIndex + ' --- >'  +totalFiles);
               var value = Math.floor(fileIndex * 100 / totalFiles);
               $('.progress-bar').css('width', value+'%').attr('aria-valuenow', value).text(fileIndex+' of '+totalFiles+' ('+value+'%)');    
 
@@ -69,7 +73,7 @@ var obj = this;
                 var url = URL.createObjectURL(blob);
                 document.getElementById("download").href = url;
                 document.getElementById("download").style.display = "block";
-                document.getElementById("download").download = "filename.zip";
+                document.getElementById("download").download = repo_id+".zip";
               });
 
           });
@@ -84,24 +88,45 @@ var obj = this;
             function nextFile() {
                 var file = files[addIndex];
 
-                      repository.read(repo.branch, file.path, function(err, data) {
+                      if(file.type == 'blob'){
+                        // Data File
+                        repository.read(repo.branch, file.path, function(err, data) {
                         
-                        file.data = data;
+                          file.data = data;
 
-                        onadd(file);
+                          onadd(file);
 
-                        // Modified here to use the Data64URIReader instead of BlobReader
-                        zipWriter.add(file.path, new zip.TextReader(file.data), function() {
-                            addIndex++;
-                            if (addIndex < files.length)
-                                nextFile();
-                            else
-                                onend();
-                        }, function(current, total){
-                          onprogress(addIndex+1, files.length, current, total)
-                        });
+                          // Modified here to use the Data64URIReader instead of BlobReader
+                          zipWriter.add(file.path, new zip.TextReader(file.data), function() {
+                              addIndex++;
+                              if (addIndex < files.length)
+                                  nextFile();
+                              else
+                                  onend();
+                          }, function(current, total){
+                            onprogress(addIndex+1, files.length, current, total)
+                          });
 
                       });
+
+                    } else {
+                          // Tree or Folder
+
+                          onadd(file);
+
+                          // Modified here to use the Data64URIReader instead of BlobReader
+                          zipWriter.add(file.path, null, function() {
+                              addIndex++;
+                              if (addIndex < files.length)
+                                  nextFile();
+                              else
+                                  onend();
+                          }, function(current, total){
+                            onprogress(addIndex+1, files.length, current, total)
+                          },{directory:true});
+
+
+                    }
             }
 
             function createZipWriter() {

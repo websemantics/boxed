@@ -82,7 +82,7 @@
                     },                    
                     "data": {
                         "package_name": "anomaly/example-module",
-                        "module_name": "Example Module",
+                        "module_name": "Example",
                         "description": "This is an example module for demonstration purposes only.",
                         "license": "MIT",
                         "namespace": "Anomaly\\ExampleModule\\",
