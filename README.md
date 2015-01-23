@@ -5,7 +5,7 @@ Box is a lightweight Boilerplate Generator that does not require the Command-lin
 
 Boxed can help you provide customizable Software Packages of your platform (modules, addons, extensions etc) to other developers in a visually appealing way, no more command line! 
 
-![alt text](https://raw.githubusercontent.com/websemantics/boxed/gh-pages/img/boxed-logo.svg "Boxed Logo")
+![alt text](https://websemantics.github.io/boxed/img/boxed-logo.svg "Boxed Logo")
 
 This porject has been developed as a proof of concept and I would welcome anyone's help to improve on it. Thank you!
 
