@@ -9,6 +9,7 @@ Boxed can help you provide customizable Software Packages of your platform (modu
 
 This porject has been developed as a proof of concept and I would welcome anyone's help to improve on it. Thank you!
 
+Check it live - http://websemantics.github.io/boxed/
 
 ## To DO
 * Tidy up the source code
