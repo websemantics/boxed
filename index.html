@@ -100,7 +100,8 @@
 
             <a id="generate" class="btn btn-large btn-success">Generate</a>
 
-            <a id="download" class="pull-right">Download</a>
+            <a id="download" class="pull-right" onClick="_gaq.push(['_trackEvent', 'Packages', 'Download']);">Download</a>
+
             </div>
           </div>
         </div>
@@ -213,6 +214,9 @@
 
    // Download handler
    $('#generate').on('click', function(event) {
+  
+      _gaq.push(['_trackEvent', 'Packages', 'Generate']);
+
       var box = new Boxed(repos_files[current_repo_id], current_repo, current_form);
           box.compileAndDownload();
     });
