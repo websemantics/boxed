@@ -16,6 +16,9 @@ var obj = this;
   var Boxed = function(repo_id, repo, form) {
 
     var zipWriter, writer, URL = obj.webkitURL || obj.mozURL || obj.URL;
+
+    // Parse the repo_id in case it contains user params (i.e. {{module_name}}-module)
+    var repo_id_template = Handlebars.compile(repo_id);
     
     var self = this;
 
@@ -75,7 +78,7 @@ var obj = this;
                 var url = URL.createObjectURL(blob);
                 document.getElementById("download").href = url;
                 document.getElementById("download").style.display = "block";
-                document.getElementById("download").download = repo_id+".zip";
+                document.getElementById("download").download = repo_id_template(formValues)+".zip";
               });
 
           });
