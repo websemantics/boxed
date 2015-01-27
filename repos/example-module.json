@@ -5,13 +5,12 @@
   "tags" : ["pyrocms3", "laravel5", "addon"],
   "form" : { 
 			  		"schema": {
-                        "title":"Configure your PyroCMS module, generate and dowbload to your project",
-                        "description":"What do you think about Alpaca?",
+                        "title":"Configure your PyroCMS module details, generate and dowbload to your project. Follow the instructions in README.md.",
                         "type":"object",
                         "properties": {
-                            "package_name": {
+                            "vendor_name": {
                                 "type":"string",
-                                "title":"Package Name"
+                                "title":"Vendor Name"
                             },
                             "module_name": {
                                 "type":"string",
@@ -20,10 +19,6 @@
                             "description": {
                                 "type":"string",
                                 "title":"Description"
-                            },
-                            "namespace": {
-                                "type":"string",
-                                "title":"Namespace"
                             },
                             "author_name": {
                                 "type":"string",
@@ -46,9 +41,9 @@
                     },
                     "options": {
                         "fields": {
-                            "package_name": {
+                            "vendor_name": {
                                 "size": 40,
-                                "placeholder": "Enter composer package name"
+                                "placeholder": "Enter vendor name"
                             },
                             "module_name": {
                                 "size": 40,
@@ -58,10 +53,6 @@
                                 "type": "textarea",
                                 "rows": 2,
                                 "cols": 40
-                            },
-                            "namespace" : {
-                                "size": 40,
-                                "placeholder": "Enter module's Namespace"
                             },
                             "author_name" : {
                                 "size": 40,
@@ -81,11 +72,10 @@
                         }
                     },                    
                     "data": {
-                        "package_name": "anomaly/example-module",
+                        "vendor_name": "Anomaly",
                         "module_name": "Example",
                         "description": "This is an example module for demonstration purposes only.",
                         "license": "MIT",
-                        "namespace": "Anomaly\\ExampleModule\\",
                         "author_name": "AnomalyLabs, Inc.",
                         "email": "hello@anomaly.is",
                         "homepage": "http://anomaly.is/"
