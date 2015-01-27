@@ -1,2 +1,2 @@
 // List of package id and compressed filename
-var repos_files = ["example-module" : "{{module_name}}-module", "customized-startbootstrap" : "customized-startbootstrap"]
+var repos_files = { "example-module" : "{{module_name}}-module", "customized-startbootstrap" : "customized-startbootstrap"}
