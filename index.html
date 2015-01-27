@@ -181,8 +181,8 @@
       $('#generate').prop('disabled', true);
 
       // Loop through all the repos and read repo infos
-      for (var i in repos_files)
-        addRepo(repos_files[i]);
+      for (var file_name in repos_files)
+        addRepo(file_name);
 
       // On change, set the current repo
       $( "#repos" ).change(function(event) {
@@ -209,7 +209,7 @@
 
    // Download handler
    $('#generate').on('click', function(event) {
-      var box = new Boxed(current_repo_id, current_repo, current_form);
+      var box = new Boxed(repos_files[current_repo_id], current_repo, current_form);
           box.compileAndDownload();
     });
 

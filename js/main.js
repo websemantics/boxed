@@ -13,12 +13,12 @@ var obj = this;
 
 (function() {
 
-  var Boxed = function(repo_id, repo, form) {
+  var Boxed = function(file_name, repo, form) {
 
     var zipWriter, writer, URL = obj.webkitURL || obj.mozURL || obj.URL;
 
-    // Parse the repo_id in case it contains user params (i.e. {{module_name}}-module)
-    var repo_id_template = Handlebars.compile(repo_id);
+    // Parse the file_name in case it contains user params (i.e. {{module_name}}-module)
+    var repo_id_template = Handlebars.compile(file_name);
     
     var self = this;
 
