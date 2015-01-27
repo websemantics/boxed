@@ -129,6 +129,7 @@ Small Device Styles
   display: inline-block;
   top: -30px;
   position: absolute;
+  font-size: smaller;
 }
 
 .nav a {
