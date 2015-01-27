@@ -1,5 +1,5 @@
 {
-  "label": "PyroCMS 3 Report",
+  "label": "PyroCMS 3 Report Extension",
   "description":"An example report addon to illustrate the usage of pyro 3 report",
   "github_url" : "https://github.com/websemantics/example_report-extension",
   "img_url" : "https://raw.githubusercontent.com/pyrocms/pyrocms-theme/master/resources/img/logo.png",
