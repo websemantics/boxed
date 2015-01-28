@@ -86,7 +86,7 @@
                     },                    
                     "data": {
                         "vendor_name": "Anomaly",
-                        "theme_name": "Pyrocms",
+                        "theme_name": "Default",
                         "type": "",
                         "description": "An example theme.",
                         "license": "MIT",
