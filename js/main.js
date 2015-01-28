@@ -20,6 +20,9 @@ var obj = this;
     // Parse the file_name in case it contains user params (i.e. {{module_name}}-module)
     var repo_id_template = Handlebars.compile(file_name);
     
+    // List of acceptable file extensions,
+    var accept = repo.accept.split(",");
+
     var self = this;
 
     // This is a crude way to access Github API (change me!)
@@ -54,12 +57,15 @@ var obj = this;
               // console.log("Initialise");
 
           }, function(file) {
-              // Parse file content
               
+                var ext = file.path.split('.').pop();
+
+                // Parse file path first,
                 var path_template   = Handlebars.compile(file.path);
                 file.path = path_template(formValues);
 
-                if(file.data){
+                // Parse file content if the extension matches the accepted param
+                if(file.data && accept.indexOf(ext) != -1){
                   var data_template = Handlebars.compile(file.data);
                   file.data = data_template(formValues);
                 }

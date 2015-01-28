@@ -4,6 +4,7 @@
   "github_url" : "https://github.com/websemantics/pyrocms-theme",
   "img_url" : "https://raw.githubusercontent.com/pyrocms/pyrocms-theme/master/resources/img/logo.png",
   "tags" : ["streams-addon", "theme", "admin","", "pyrocms3"],
+  "accept" : "php,html",
   "form" : { 
 			  		"schema": {
                         "title":"Configure your PyroCMS Theme details, generate and dowbload to your project. Follow the instructions in README.md.",

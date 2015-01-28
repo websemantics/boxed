@@ -4,6 +4,7 @@
   "github_url" : "https://github.com/websemantics/example-module",
   "img_url" : "https://raw.githubusercontent.com/pyrocms/pyrocms-theme/master/resources/img/logo.png",
   "tags" : ["pyrocms3", "laravel5", "addon"],
+  "accept" : "php,html",
   "form" : { 
 			  		"schema": {
                         "title":"Configure your PyroCMS module details, generate and dowbload to your project. Follow the instructions in README.md.",

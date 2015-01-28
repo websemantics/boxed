@@ -4,6 +4,7 @@
   "github_url" : "https://github.com/websemantics/example_report-extension",
   "img_url" : "https://raw.githubusercontent.com/pyrocms/pyrocms-theme/master/resources/img/logo.png",
   "tags" : ["streams-addon", "dashboard", "report", "laravel"],
+  "accept" : "php,html",
   "form" : { 
 			  		"schema": {
                         "title":"Configure your PyroCMS Report details, generate and dowbload to your project. Follow the instructions in README.md.",
