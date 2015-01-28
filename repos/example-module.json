@@ -44,10 +44,12 @@
                         "fields": {
                             "vendor_name": {
                                 "size": 40,
-                                "placeholder": "Enter vendor name (one word)"
+                                "helper": "Enter vendor name (one word with first letter in uppercase)",
+                                "placeholder": "Enter vendor name"
                             },
                             "module_name": {
                                 "size": 40,
+                                "helper": "Enter module name (one word with first letter in uppercase)",
                                 "placeholder": "Enter module name (one word)"
                             },
                             "description" : {

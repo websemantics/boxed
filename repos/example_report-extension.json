@@ -44,11 +44,13 @@
                         "fields": {
                             "vendor_name": {
                                 "size": 40,
-                                "placeholder": "Enter vendor name (one word)"
+                                "helper": "Enter vendor name (one word with first letter in uppercase)",
+                                "placeholder": "Enter vendor name"
                             },
                             "report_name": {
                                 "size": 40,
-                                "placeholder": "Enter report name (one word)"
+                                "helper": "Enter report name (one word with first letter in uppercase)",
+                                "placeholder": "Enter report name"
                             },
                             "description" : {
                                 "type": "textarea",
