@@ -11,12 +11,20 @@ This porject has been developed as a proof of concept and I would welcome anyone
 
 Check it live - http://websemantics.github.io/boxed/
 
+## Supported Addons
+
+* PyroCMS 3 Module
+* PyroCMS 3 Report Extension
+* Custom Theme
+
 ## To DO
-* Tidy up the source code
+
+* Tidy-up the source code
 * Use OAuth to acceess Github API / Other?!
 * Documentation
 
 ## Open Source projects used
+
 * github - https://github.com/michael/github
 * alpaca - https://github.com/gitana/alpaca
 * jquery - https://github.com/jquery/jquery
