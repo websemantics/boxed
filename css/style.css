@@ -198,3 +198,16 @@ padding-bottom: 10px;
 .progress {
   background-color: #ababab;
 }
+
+/* Mailchimp */
+
+#mc_embed_signup {
+background: transparent!important;
+margin: -12px;
+}
+
+#mc_embed_signup input.button, #mc_embed_signup input.email {
+display: inline!important;
+border-radius : 3px;
+}
+
