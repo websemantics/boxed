@@ -117,7 +117,7 @@ var obj = this;
                             // data = new Uint16Array(data); TODO: FIX IMAGE ENCODING
                           }
 
-                          var blob = new Blob([ data ], {
+                          var blob = new Blob([ this.data ], {
                             type : type
                           });
 
@@ -173,46 +173,6 @@ var obj = this;
     };
 
     
-/*
-mode: "040000"
-path: "src/Http/Controller"
-sha: "1fec15adea0544c0cb597db689267908fa316206"
-type: "tree"
-url: "https://api.github.com/repos/anomalylabs/example-module/git/trees/1fec15adea0544c0cb597db689267908fa316206"
-
- 
-mode: "100644"
-path: "src/Installer/ExampleFieldInstaller.php"
-sha: "524473fb6e6227de526a2c6d2ae977d49e77990d"
-size: 462
-type: "blob"
-url: "https://api.github.com/repos/anomalylabs/example-module/git/blobs/524473fb6e6227de526a2c6d2ae977d49e77990d"__proto__: Object
-
-*/
-
-
-      // var github = new Github({
-      //   token: "697d76cd00d1a42d4ed1144abbf88e7e2963cc00",
-      //   auth: "8fe89254b74160890445"
-      // });
-
-      // github.getRateLimit(function(err, limit){
-      //  console.log(limit);
-      // });
-
-      // 0 users
-      // Client ID
-      // 8fe89254b74160890445
-      // Client Secret
-      // 697d76cd00d1a42d4ed1144abbf88e7e2963cc00
-
-
-
-        // repo.read('master', 'path/to/file', function(err, data) {});
-
-        // console.log(tree);
-
-
 
   if (typeof exports !== 'undefined') {
     // Github = exports;
