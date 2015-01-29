@@ -104,7 +104,7 @@ var obj = this;
                         repository.read(repo.branch, file.path, function(err, data) {
                         
                           file.data = data;
-
+console.log(file);
                           onadd(file);
 
                           // this is a mess, .. 
