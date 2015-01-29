@@ -107,8 +107,12 @@ var obj = this;
 
                           onadd(file);
 
+                          // this is a mess, .. 
+                          var ext = file.path.split('.').pop();
+                          var cls = (['png','gif','jpg','jpeg'].indexOf(ext) != -1)? zip.BlobReader : zip.TextReader;
+
                           // Modified here to use the Data64URIReader instead of BlobReader
-                          zipWriter.add(file.path, new zip.TextReader(file.data), function() {
+                          zipWriter.add(file.path, new cls(file.data), function() {
                               addIndex++;
                               if (addIndex < files.length)
                                   nextFile();
