@@ -117,7 +117,7 @@ var obj = this;
                             // data = new Uint16Array(data); TODO: FIX IMAGE ENCODING
                           }
 
-                          var blob = new Blob([ this.data ], {
+                          var blob = new Blob([ file.data ], {
                             type : type
                           });
 
