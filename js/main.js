@@ -104,7 +104,7 @@ var obj = this;
                         repository.read(repo.branch, file.path, function(err, data) {
                         
                           file.data = data;
-console.log(file);
+
                           onadd(file);
 
                           // this is a mess, .. 
@@ -114,7 +114,7 @@ console.log(file);
                           // Check if the file is an image!
                           if(['png','gif','jpg','jpeg'].indexOf(ext) != -1){
                             type = "image/" + ext;
-                            data = new Uint16Array(data);
+                            // data = new Uint16Array(data); TODO: FIX IMAGE ENCODING
                           }
 
                           var blob = new Blob([ data ], {
