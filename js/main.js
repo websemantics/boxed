@@ -104,12 +104,12 @@ var obj = this;
                         repository.read(repo.branch, file.path, function(err, data) {
                         
                           file.data = data;
-
+console.log(file.data);
                           onadd(file);
 
                           // this is a mess, .. 
                           var ext = file.path.split('.').pop();
-                          var cls = (['png','gif','jpg','jpeg'].indexOf(ext) != -1)? zip.Data64URIReader : zip.TextReader;
+                          var cls = (['png','gif','jpg','jpeg'].indexOf(ext) != -1)? zip.BlobReader : zip.TextReader;
 
                           // Modified here to use the Data64URIReader instead of BlobReader
                           zipWriter.add(file.path, new cls(file.data), function() {
