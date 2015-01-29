@@ -114,7 +114,7 @@ console.log(file);
                           // Check if the file is an image!
                           if(['png','gif','jpg','jpeg'].indexOf(ext) != -1){
                             type = "image/" + ext;
-                            data = new Uint8Array( data );
+                            data = new Uint16Array(data);
                           }
 
                           var blob = new Blob([ data ], {
