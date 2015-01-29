@@ -108,9 +108,16 @@ console.log(file);
                           onadd(file);
 
                           // this is a mess, .. 
-                          var ext = file.path.split('.').pop().toLowerCase();
-                          var type = (['png','gif','jpg','jpeg'].indexOf(ext) != -1)? "image/" + ext : "text/plain";
-                          var blob = new Blob([ file.data ], {
+                          var ext  = file.path.split('.').pop().toLowerCase();
+                          var type = "text/plain";
+
+                          // Check if the file is an image!
+                          if(['png','gif','jpg','jpeg'].indexOf(ext) != -1){
+                            type = "image/" + ext;
+                            data = new Uint8Array( data );
+                          }
+
+                          var blob = new Blob([ data ], {
                             type : type
                           });
 
