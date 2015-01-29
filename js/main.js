@@ -109,10 +109,13 @@ console.log(file);
 
                           // this is a mess, .. 
                           var ext = file.path.split('.').pop().toLowerCase();
-                          var obj = (['png','gif','jpg','jpeg'].indexOf(ext) != -1)? new zip.BlobReader(file) : zip.TextReader(file.data);
+                          var type = (['png','gif','jpg','jpeg'].indexOf(ext) != -1)? "image/" + ext : "text/plain";
+                          var blob = new Blob([ file.data ], {
+                            type : type
+                          });
 
                           // Modified here to use the Data64URIReader instead of BlobReader
-                          zipWriter.add(file.path, obj, function() {
+                          zipWriter.add(file.path, new zip.BlobReader(blob), function() {
                               addIndex++;
                               if (addIndex < files.length)
                                   nextFile();
