@@ -14,6 +14,7 @@ Check it live - http://websemantics.github.io/boxed/
 ## Supported Addons
 
 * PyroCMS 3 Module
+* PyroCMS 3 Theme (new)
 * PyroCMS 3 Report Extension
 * Custom Theme
 
