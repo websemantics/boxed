@@ -2,5 +2,6 @@
 var repos_files = { 
 	"example-theme" : "{{toLowerCase theme_name}}-theme",
 	"example_report-extension" : "{{toLowerCase report_name}}_report-extension",
+	"pyro-entity" : "{{entity_name}}",
 	"example-module" : "{{toLowerCase module_name}}-module",
  	"customized-startbootstrap" : "customized-startbootstrap"}
