@@ -29,6 +29,10 @@
                             "description": {
                                 "type":"string",
                                 "title":"Description"
+                            },
+                            "docblock": {
+                                "type":"string",
+                                "title":"Doc Block"
                             }
                         }
                     },
@@ -58,6 +62,11 @@
                                 "type": "textarea",
                                 "rows": 2,
                                 "cols": 40
+                            },
+                            "docblock" : {
+                                "type": "textarea",
+                                "rows": 2,
+                                "cols": 40
                             }
                         }
                     },                    
@@ -66,7 +75,8 @@
                         "module_name": "Example",
                         "namespace": "Example",
                         "entity_name": "Thing",
-                        "description": "This is an example entity."
+                        "description": "This is an example entity.",
+                        "docblock": " * @link          http://anomaly.is/streams-platform\\n * @author        AnomalyLabs, Inc. <hello@anomaly.is>\\n * @author        Ryan Thompson <ryan@anomaly.is>"
                     }
 
   		}
