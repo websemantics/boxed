@@ -1,6 +1,6 @@
 {
   "label": "PyroCMS 3 Entity",
-  "description":"An example Entity template to to be used with Pyro Modules. An Entity is a representation of an Object Type which may correspond with a Stream,.. for example, a Person, a Company or an Animal can all be generated as Pyro Entities",
+  "description":"An Entity template to to be used with Pyro Modules. An Entity is a representation of an Object Type which may correspond with a Stream,.. for example, a Person, a Company or an Animal can all be generated as Pyro Entities. Code generated includes the Entity Model and Repository, Plugin, Contracts, Table and Form Builders",
   "github_url" : "https://github.com/websemantics/pyro-entity",
   "img_url" : "https://raw.githubusercontent.com/pyrocms/pyrocms-theme/master/resources/img/icon-dark.png",
   "tags" : ["pyrocms3", "laravel5", "addon"],
