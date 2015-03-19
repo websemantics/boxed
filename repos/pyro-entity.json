@@ -65,7 +65,6 @@
                             },
                             "docblock" : {
                                 "type": "editor",
-                                "aceMode": "ace/mode/php",
                                 "aceFitContentHeight": true
                             }
                         }
