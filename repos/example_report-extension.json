@@ -2,7 +2,7 @@
   "label": "PyroCMS 3 Report Extension",
   "description":"An example Report template to illustrate the usage of PyroCMS 3 Report Extension",
   "github_url" : "https://github.com/websemantics/example_report-extension",
-  "img_url" : "https://raw.githubusercontent.com/pyrocms/pyrocms-theme/master/resources/img/logo.png",
+  "img_url" : "https://raw.githubusercontent.com/pyrocms/pyrocms-theme/master/resources/img/icon-dark.png",
   "tags" : ["streams-addon", "dashboard", "report", "laravel"],
   "accept" : "php,html,json,md",
   "form" : { 
