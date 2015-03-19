@@ -177,6 +177,7 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/handlebars.min.js"></script>
   <script type="text/javascript" src="js/alpaca.min.js"></script>
+  <script type="text/javascript" src="js/inflection.js"></script>
   <script type="text/javascript" src="js/zipjs/zip.js"></script>
   <script type="text/javascript" src="js/github.js"></script>
   <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
@@ -192,6 +193,16 @@
   Handlebars.registerHelper('toLowerCase', function(str) {
     return str.toLowerCase();
   });
+
+  Handlebars.registerHelper('toLowerPlural', function(str) {
+    return str.pluralize().toLowerCase();
+  });
+  
+  Handlebars.registerHelper('toPlural', function(str) {
+    return str.pluralize();
+  });
+
+  pluralize
 
    var template   = Handlebars.compile($("#package-template").html());
        zip.workerScriptsPath = "js/zipjs/";
