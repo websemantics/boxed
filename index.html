@@ -197,12 +197,10 @@
   Handlebars.registerHelper('toLowerPlural', function(str) {
     return str.pluralize().toLowerCase();
   });
-  
+
   Handlebars.registerHelper('toPlural', function(str) {
     return str.pluralize();
   });
-
-  pluralize
 
    var template   = Handlebars.compile($("#package-template").html());
        zip.workerScriptsPath = "js/zipjs/";
