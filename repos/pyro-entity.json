@@ -1,0 +1,73 @@
+{
+  "label": "PyroCMS 3 Entity",
+  "description":"An example Entity template to to be used with Pyro Modules. An Entity is a representation of an Object Type which may correspond with a Stream,.. for example, a Person, a Company or an Animal can all be generated as Pyro Entities",
+  "github_url" : "https://github.com/websemantics/pyro-entity",
+  "img_url" : "https://raw.githubusercontent.com/pyrocms/pyrocms-theme/master/resources/img/logo.png",
+  "tags" : ["pyrocms3", "laravel5", "addon"],
+  "accept" : "php,html,json,md",
+  "form" : { 
+			  		"schema": {
+                        "title":"Configure your Entity details, generate and download to your project.",
+                        "type":"object",
+                        "properties": {
+                            "vendor_name": {
+                                "type":"string",
+                                "title":"Vendor Name"
+                            },
+                            "module_name": {
+                                "type":"string",
+                                "title":"Module Name"
+                            },
+                            "namespace": {
+                                "type":"string",
+                                "title":"Namespace"
+                            },
+                            "entity_name": {
+                                "type":"string",
+                                "title":"Entity Name"
+                            },
+                            "description": {
+                                "type":"string",
+                                "title":"Description"
+                            }
+                        }
+                    },
+                    "options": {
+                        "fields": {
+                            "vendor_name": {
+                                "size": 40,
+                                "helper": "Enter vendor name (one word with Uppercase first letter)",
+                                "placeholder": "Enter vendor name (one word)"
+                            },
+                            "module_name": {
+                                "size": 40,
+                                "helper": "Enter module name (one word with Uppercase first letter)",
+                                "placeholder": "Enter module name (one word)"
+                            },
+                            "namespace": {
+                                "size": 40,
+                                "helper": "Enter namespace (one word with Uppercase first letter)",
+                                "placeholder": "Enter module name (one word)"
+                            },
+                            "entity_name": {
+                                "size": 40,
+                                "helper": "Enter entity name (one word with Uppercase first letter)",
+                                "placeholder": "Enter entity name (one word)"
+                            },
+                            "description" : {
+                                "type": "textarea",
+                                "rows": 2,
+                                "cols": 40
+                            }
+                        }
+                    },                    
+                    "data": {
+                        "vendor_name": "Anomaly",
+                        "module_name": "Example",
+                        "namespace": "Example",
+                        "entity_name": "Thing",
+                        "description": "This is an example entity."
+                    }
+
+  		}
+}
