@@ -46,8 +46,8 @@
                             },
                             "namespace": {
                                 "size": 40,
-                                "helper": "Enter namespace (one word with Uppercase first letter)",
-                                "placeholder": "Enter module name (one word)"
+                                "helper": "Enter namespace (Same as Module name by default, one word with Uppercase first letter)",
+                                "placeholder": "Enter namespace (one word)"
                             },
                             "entity_name": {
                                 "size": 40,
