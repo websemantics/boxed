@@ -1,12 +1,12 @@
 {
   "label": "PyroCMS 3 Theme",
-  "description":"An Example Theme",
-  "github_url" : "https://github.com/websemantics/example-theme",
-  "img_url" : "https://raw.githubusercontent.com/pyrocms/pyrocms-theme/master/resources/img/icon-dark.png",
-  "tags" : ["streams-addon", "theme", "pyrocms3"],
+  "description":"An example Bootstrap Theme",
+  "github_url" : "https://github.com/websemantics/pyrocms-theme",
+  "img_url" : "https://raw.githubusercontent.com/pyrocms/pyrocms-theme/master/resources/img/logo.png",
+  "tags" : ["streams-addon", "theme", "admin","pyrocms3"],
   "accept" : "php,html,json,md",
   "form" : { 
-			"schema": {
+			  		"schema": {
                         "title":"Configure your PyroCMS Theme details, generate and dowbload to your project. Follow the instructions in README.md.",
                         "type":"object",
                         "properties": {
@@ -86,9 +86,9 @@
                     },                    
                     "data": {
                         "vendor_name": "Anomaly",
-                        "theme_name": "Example",
+                        "theme_name": "Default",
                         "type": "",
-                        "description": "An example public theme for the Streams platform.",
+                        "description": "An example theme.",
                         "license": "MIT",
                         "author_name": "AnomalyLabs, Inc.",
                         "email": "hello@anomaly.is",
