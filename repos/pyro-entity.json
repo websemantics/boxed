@@ -76,7 +76,9 @@
                         "namespace": "Example",
                         "entity_name": "Thing",
                         "description": "This is an example entity.",
-                        "docblock": " * @link          http://anomaly.is/streams-platform\\n * @author        AnomalyLabs, Inc. <hello@anomaly.is>\\n * @author        Ryan Thompson <ryan@anomaly.is>"
+                        "docblock": " * @link          http://anomaly.is/streams-platform
+                         * @author        AnomalyLabs, Inc. <hello@anomaly.is>
+                         * @author        Ryan Thompson <ryan@anomaly.is>"
                     }
 
   		}
