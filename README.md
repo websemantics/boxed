@@ -23,6 +23,7 @@ Check it live - http://websemantics.github.io/boxed/
 * Tidy-up the source code
 * Use OAuth to acceess Github API / Other?!
 * Documentation
+* Update Github.js
 
 ## Open Source projects used
 
