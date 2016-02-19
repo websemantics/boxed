@@ -84,6 +84,7 @@ var obj = this;
                 var url = URL.createObjectURL(blob);
                 document.getElementById("download").href = url;
                 document.getElementById("download").style.display = "block";
+
                 document.getElementById("download").download = repo_id_template(formValues)+".zip";
               });
 
@@ -171,8 +172,6 @@ var obj = this;
         }
 
     };
-
-    
 
   if (typeof exports !== 'undefined') {
     // Github = exports;
