@@ -6,11 +6,10 @@
   \ \  \|\  \ \  \\\  \  /     \/   \ \  \_|\ \ \  \_\\ \      ___ ___ ___     
    \ \_______\ \_______\/  /\   \    \ \_______\ \_______\    |\__\\__\\__\    
     \|_______|\|_______/__/ /\ __\    \|_______|\|_______|    \|__\|__\|__|    
-                       |__|/ \|__|  Web Semantics, Inc.                                           
- Version 0.2
- Updated: 18 Feb 2016
+                       |__|/ \|__|  v0.2                                           
+```                                                                                                                          
+> Last update: Feb 19 2016
 
-```                                                                                                                                 
 Boxed is a lightweight Boilerplate Generator that does not require the Command-line Interface (CLI) to customize software addons and packages, for the Visually-oriented Developers.
 
 Boxed can help you provide customizable Software Packages of your platform (modules, addons, extensions etc) to other developers in a visually appealing way, no more command line! 
