@@ -16,11 +16,34 @@
 
 > Boxed can help you provide customizable  packages of your platform (modules, addons, extensions etc) to other developers in a visually appealing way, no more command line, horray!
 
+## Contribute
+
+See the [contributing docs](contributing.md)
+
+
 ## Issue Submission
 
-Make sure you've read the [issue submission guidelines](https://github.com/ibuildio/ibuildio/blob/master/contributing.md#issue-submission) before you open a [new issue](https://github.com/ibuildio/ibuildio/issues/new).
+Make sure you've read the [issue submission guidelines](https://github.com/ibuildio/ibuildio/blob/master/contributing.md#issue-submission) before you open a [new issue](https://github.com/websemantics/boxed/issues/new).
 
-Ibuild is composed of a number of different sub-projects, most of which have their own dedicated repository. If you are looking for a repo for a particular piece, you'll find it on the [organization](https://github.com/ibuildio) page.
+Boxed is composed of a number of different sub-projects, most of which have their own dedicated repository. If you are looking for a repo for a particular piece, you'll probably find it on the [organization](https://github.com/websemantics?tab=repositories) page.
+
+
+## Support
+
+Need help or have a question?
+
+- [StackOverflow](https://stackoverflow.com/questions/tagged/boxed)
+
+*Please don't use the issue trackers for support/questions.*
+
+
+## Links
+
+- [Website](http://websemantics.github.io/boxed/)
+- [Development discussions](https://github.com/ibuildio/ibuildio/issues)
+- [Twitter](https://twitter.com/ibuildio)
+- [Media kit](https://github.com/ibuildio/media)
+- [Discover Ibuild builders](http://ibuild.io/search)
 
 
 ## Team
