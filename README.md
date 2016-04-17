@@ -2,7 +2,7 @@
 
 > A lightweight boilerplate generator that does not require the command-line interface (CLI) to customize software addons and packages for the visually-oriented developers.
 
-#### [Website](http://websemantics.github.io/boxed/)&nbsp;&nbsp;&nbsp;[Getting Started](http://websemantics.github.io/boxed/#get-started)&nbsp;&nbsp;&nbsp;[Submit Issue](contributing.md#issue-submission)
+#### [Website](http://websemantics.github.io/boxed/)&nbsp;&nbsp;&nbsp;[Getting Started](http://websemantics.github.io/boxed/#get-started)&nbsp;&nbsp;&nbsp;[Packages](http://websemantics.github.io/boxed/#packages)&nbsp;&nbsp;&nbsp;[Submit Issue](contributing.md#issue-submission)
 
 ```
   __________          
