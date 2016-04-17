@@ -16,6 +16,13 @@
 
 > Boxed can help you provide customizable  packages of your platform (modules, addons, extensions etc) to other developers in a visually appealing way, no more command line, horray!
 
+## Issue Submission
+
+Make sure you've read the [issue submission guidelines](https://github.com/ibuildio/ibuildio/blob/master/contributing.md#issue-submission) before you open a [new issue](https://github.com/ibuildio/ibuildio/issues/new).
+
+Ibuild is composed of a number of different sub-projects, most of which have their own dedicated repository. If you are looking for a repo for a particular piece, you'll find it on the [organization](https://github.com/ibuildio) page.
+
+
 ## Team
 
 Boxed is beautifully crafted by these people and a bunch of awesome [contributors](https://github.com/websemantics/boxed/contributors).

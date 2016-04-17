@@ -1,0 +1,17 @@
+0.2.1
+  date: 2016-04-16
+  changes:
+  - Update project ui and structure
+
+0.2.0
+  date: 2016-02-19
+  changes:
+  - Bugs fixes
+
+0.1.0
+  date: 2015-01-18
+  changes:
+  - Generate PyroCMS Modules
+  - Generate PyroCMS Theme
+  - Generate PyroCMS Entity
+  - Generate One Page Theme
