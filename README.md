@@ -1,6 +1,6 @@
 # Welcome to Boxed
 
-> A lightweight boilerplate generator that does not require the command-line interface (CLI) to customize software addons and packages for the visually-oriented developers.
+> A lightweight boilerplate generator that does not require the command-line interface (CLI) to customize software addons and packages for the visually-oriented developers. Boxed can help you provide customizable  packages of your platform (modules, addons, extensions etc) to other developers in a visually appealing way, no more command line, horray!
 
 #### [Website](http://websemantics.github.io/boxed/)&nbsp;&nbsp;&nbsp;[Getting Started](http://websemantics.github.io/boxed/#get-started)&nbsp;&nbsp;&nbsp;[Packages](http://websemantics.github.io/boxed/#packages)&nbsp;&nbsp;&nbsp;[Submit Issue](contributing.md#issue-submission)
 
@@ -14,7 +14,6 @@
 
 ```
 
-> Boxed can help you provide customizable  packages of your platform (modules, addons, extensions etc) to other developers in a visually appealing way, no more command line, horray!
 
 ## Contribute
 
