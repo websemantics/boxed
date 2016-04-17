@@ -4,7 +4,7 @@
 /  \__________\
 \  / BOXED    /        
  \/__________/
-  The command-less way, ... 
+  The command-less way, ...
 
 ```
 > A lightweight boilerplate generator that does not require the command-line interface (CLI) to customize software addons and packages, for the visually-oriented developers.
@@ -97,14 +97,6 @@ Use with your Boxed projects
       ___
      |\__\
      \|__| BOXED
-
-     ╔╗ ╔═╗═╗ ╦╔═╗╔╦╗
-     ╠╩╗║ ║╔╩╦╝║╣  ║║
-     ╚═╝╚═╝╩ ╚═╚═╝═╩╝
-
-
-
-
 
   ```
 
