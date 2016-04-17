@@ -4,6 +4,7 @@
 /  \__________\
 \  / BOXED    /        
  \/__________/
+  The command-line less way!
 
 ```
 > A lightweight boilerplate generator that does not require the command-line interface (CLI) to customize software addons and packages, for the visually-oriented developers.
