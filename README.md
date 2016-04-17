@@ -104,9 +104,17 @@ Use this ascii art with your next Boxed project.
 ```
 
 
+## Boxed Projects
+
+- [Example Pyro Theme](),
+- [Example Pyro Report Extension](https://github.com/websemantics/example_report-extension),
+- [Example Pyro Entity](https://github.com/websemantics/pyro-entity),
+- [Example Pyro Module](https://github.com/websemantics/example-module),
+- [Example Customized Bootstrap Theme](https://github.com/websemantics/customized-startbootstrap),
+
 ## Credits
 
-  Project used to build Boxed.
+    Project used to build Boxed.
 
   * Github - https://github.com/michael/github
   * Alpaca - https://github.com/gitana/alpaca
