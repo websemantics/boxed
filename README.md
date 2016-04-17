@@ -32,17 +32,6 @@ Boxed is beautifully crafted by these people and a bunch of awesome [contributor
 [Adnan M.Sagar](github.com/websemantics) | [Your Name](github.com/websemantics) |
 
 
-## Credits
-
-Project used to build Boxed.
-
-* Github - https://github.com/michael/github
-* Alpaca - https://github.com/gitana/alpaca
-* JQuery - https://github.com/jquery/jquery
-* Underscore - https://github.com/jashkenas/underscore
-* Bootstrap - https://github.com/twbs/bootstrap
-* Handlebarsjs - https://github.com/wycats/handlebars.js/
-
 ### Boxes Everywhere
 
 Use this ascii art with your next Boxed project.
@@ -95,8 +84,20 @@ Use this ascii art with your next Boxed project.
       ___
      |\__\
      \|__| BOXED
+```
 
-  ```
+
+## Credits
+
+  Project used to build Boxed.
+
+  * Github - https://github.com/michael/github
+  * Alpaca - https://github.com/gitana/alpaca
+  * JQuery - https://github.com/jquery/jquery
+  * Underscore - https://github.com/jashkenas/underscore
+  * Bootstrap - https://github.com/twbs/bootstrap
+  * Handlebarsjs - https://github.com/wycats/handlebars.js/
+
 
 ## License
 
