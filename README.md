@@ -114,14 +114,14 @@ Use this ascii art with your next Boxed project.
 
 ## Credits
 
-    Project used to build Boxed.
+Project used to build Boxed.
 
-  * Github - https://github.com/michael/github
-  * Alpaca - https://github.com/gitana/alpaca
-  * JQuery - https://github.com/jquery/jquery
-  * Underscore - https://github.com/jashkenas/underscore
-  * Bootstrap - https://github.com/twbs/bootstrap
-  * Handlebarsjs - https://github.com/wycats/handlebars.js/
+* Github - https://github.com/michael/github
+* Alpaca - https://github.com/gitana/alpaca
+* JQuery - https://github.com/jquery/jquery
+* Underscore - https://github.com/jashkenas/underscore
+* Bootstrap - https://github.com/twbs/bootstrap
+* Handlebarsjs - https://github.com/wycats/handlebars.js/
 
 
 ## License
