@@ -49,7 +49,7 @@ Join our team by [get started](http://websemantics.github.io/boxed/#get-started)
 
 ### Boxes Everywhere
 
-Use this ascii art with your next Boxed project.
+Use these `ascii art` examples with your next Boxed project.
 
 ```
       _   __                         _______
