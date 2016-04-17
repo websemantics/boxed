@@ -16,37 +16,29 @@
 
 > Boxed can help you provide customizable  packages of your platform (modules, addons, extensions etc) to other developers in a visually appealing way, no more command line, horray!
 
-## Supported Addons
+## Team
 
-* PyroCMS 3 Module
-* PyroCMS 3 Theme (new)
-* PyroCMS 3 Report Extension
-* Custom Theme
+Boxed is beautifully crafted by these people and a bunch of awesome [contributors](https://github.com/websemantics/boxed/contributors).
 
-### Change Log
-All notable changes to this project will be documented in this section.
+[![Adnan M. Sagar](https://s.gravatar.com/avatar/d1fd4130d4265c23ccd72134be67d03a?s=117)](http://websemantics.ca/musbahsagar) | ![Your picture](https://www.gravatar.com/avatar/?d=mm&s=117) |
+:---:|
+[Adnan M.Sagar](github.com/websemantics) |[Your name](github.com/websemantics) |
 
-#### [0.2] - Feb 19, 2016
-##### Changed
-- Bugs fixes
 
-####[0.1] - Jan 18, 2015
-##### Changed
-- Generate PyroCMS Modules
-- Generate PyroCMS Theme
-- Generate PyroCMS Entity
-- Generate One Page Theme
+## Credits
 
-## To DO
+Project used to build Boxed.
 
-* Tidy-up the source code
-* Use OAuth to acceess Github API / Other?!
-* Documentation
-* Update Github.js
+* Github - https://github.com/michael/github
+* Alpaca - https://github.com/gitana/alpaca
+* JQuery - https://github.com/jquery/jquery
+* Underscore - https://github.com/jashkenas/underscore
+* Bootstrap - https://github.com/twbs/bootstrap
+* Handlebarsjs - https://github.com/wycats/handlebars.js/
 
 ### Boxes Everywhere
 
-Use with your Boxed projects
+Use this ascii art with your next Boxed project.
 
 ```
        ___________________________________       
@@ -99,11 +91,7 @@ Use with your Boxed projects
 
   ```
 
-## Open Source projects used
+## License
 
-* github - https://github.com/michael/github
-* alpaca - https://github.com/gitana/alpaca
-* jquery - https://github.com/jquery/jquery
-* underscore - https://github.com/jashkenas/underscore
-* bootstrap - https://github.com/twbs/bootstrap
-* handlebarsjs - https://github.com/wycats/handlebars.js/
+[MIT](LICENSE)
+Copyright (c) Web Semantics, Inc.
