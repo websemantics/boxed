@@ -21,8 +21,8 @@
 Boxed is beautifully crafted by these people and a bunch of awesome [contributors](https://github.com/websemantics/boxed/contributors).
 
 [![Adnan M. Sagar](https://s.gravatar.com/avatar/d1fd4130d4265c23ccd72134be67d03a?s=117)](http://websemantics.ca/musbahsagar) | ![Your picture](https://www.gravatar.com/avatar/?d=mm&s=117) |
-:---:|
-[Adnan M.Sagar](github.com/websemantics) |[Your name](github.com/websemantics) |
+:---:|:---:|
+[Adnan M.Sagar](github.com/websemantics) | [Your name](github.com/websemantics) |
 
 
 ## Credits
