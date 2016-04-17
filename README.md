@@ -16,8 +16,6 @@
 
 > Boxed can help you provide customizable  packages of your platform (modules, addons, extensions etc) to other developers in a visually appealing way, no more command line, horray!
 
-![alt text](https://websemantics.github.io/boxed/img/boxed-logo.svg "Boxed Logo")
-
 ## Supported Addons
 
 * PyroCMS 3 Module
