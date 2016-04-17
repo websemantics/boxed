@@ -1,18 +1,12 @@
 ```
- ________  ________     ___    ___ _______   ________                          
-|\   __  \|\   __  \   |\  \  /  /|\  ___ \ |\   ___ \                         
-\ \  \|\ /\ \  \|\  \  \ \  \/  / | \   __/|\ \  \_|\ \                        
- \ \   __  \ \  \\\  \  \ \    / / \ \  \_|/_\ \  \ \\ \                       
-  \ \  \|\  \ \  \\\  \  /     \/   \ \  \_|\ \ \  \_\\ \      ___ ___ ___     
-   \ \_______\ \_______\/  /\   \    \ \_______\ \_______\    |\__\\__\\__\    
-    \|_______|\|_______/__/ /\ __\    \|_______|\|_______|    \|__\|__\|__|    
-                       |__|/ \|__|  v0.2                                           
-```                                                                                                                          
-> Last update: Feb 19 2016
+  __________       
+ /\__________\
+/  \__________\
+\  / BOXED    /        
+ \/__________/ Get started with your own, ...
+```                                                                                                       > Boxed is a lightweight boilerplate Generator that does not require the command-line interface (CLI) to customize software addons and packages, for the visually-oriented developers.
 
-Boxed is a lightweight Boilerplate Generator that does not require the Command-line Interface (CLI) to customize software addons and packages, for the Visually-oriented Developers.
-
-Boxed can help you provide customizable Software Packages of your platform (modules, addons, extensions etc) to other developers in a visually appealing way, no more command line! 
+Boxed can help you provide customizable Software Packages of your platform (modules, addons, extensions etc) to other developers in a visually appealing way, no more command line!
 
 ![alt text](https://websemantics.github.io/boxed/img/boxed-logo.svg "Boxed Logo")
 
@@ -47,6 +41,69 @@ All notable changes to this project will be documented in this section.
 * Use OAuth to acceess Github API / Other?!
 * Documentation
 * Update Github.js
+
+### Boxes Everywhere
+
+Use with your Boxed projects
+
+```
+       ___________________________________       
+      /\                                  \     
+     /  \                                  \     
+    /    \ BOXED                            \     
+   /      \__________________________________\     
+  /        \                                  \
+ /          \                                  \
+/            \__________________________________\
+\            /   _   __                         /
+ \          /   / | / /___ _____ ___  ___      /
+  \        /   /  |/ / __ `/ __ `__ \/ _ \    /
+   \      /   / /|  / /_/ / / / / / /  __/   /
+    \    /   /_/ |_/\__,_/_/ /_/ /_/\___/   /
+     \  /   Awesomeness all the way ...    /
+      \/__________________________________/
+
+      _   __                         _______
+     / | / /___ _____ ___  ___      /\_______\    
+    /  |/ / __ `/ __ `__ \/ _ \    /  \_______\
+   / /|  / /_/ / / / / / /  __/    \  / BOXED /
+  /_/ |_/\__,_/_/ /_/ /_/\___/      \/_______/
+  Awesomeness all the way ...                          
+
+    __________       
+   /\          \     
+  /  \__________\
+ /    \  BOXED   \
+/      \__________\
+\      /          /        
+ \    /          /
+  \  /          /
+   \/__________/
+
+      __________       
+     /\__________\
+    /  \__________\
+    \  / BOXED    /        
+     \/__________/
+
+      _____       
+     /\____\
+    \  \____\
+     \/_____/ BOXED
+
+      ___
+     |\__\
+     \|__| BOXED
+
+     ╔╗ ╔═╗═╗ ╦╔═╗╔╦╗
+     ╠╩╗║ ║╔╩╦╝║╣  ║║
+     ╚═╝╚═╝╩ ╚═╚═╝═╩╝
+
+
+
+
+
+  ```
 
 ## Open Source projects used
 
