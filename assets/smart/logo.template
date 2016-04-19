@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ width }}" height="{{ height }}" viewBox="{{ viewbox_x }} {{ viewbox_y }} {{ viewbox_width }} {{ viewbox_height }}">
+  <g>
+    <path fill="{{ dark_fill }}" d="M72 49.5L21.8 64.2v68L72 146.7v.2l50.4-15V64L72 49.5z"/>
+    <path fill="{{ fill }}" d="M21.8 64.2L72 79v67.9l-50.2-14.7z"/>
+    <path fill="{{ lite_fill }}" d="M72 79l50.5-15L72 49.5 21.8 64.2z"/>
+    <path id="shadow" fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}" d="M122.4 131.853v-21.9l15.7 4.6v.2l-3.5 4-11.8 12.9-.3.2"/>
+  </g>
+  {% if symbols_right %}<path id="symbols_right" fill="{{ symbol_dark_fill }}" d="M114 109.5l-10.7 3V127l10.6-3.2v-14.3zm-1 1.4v12l-9 2.6v-12l9-2.7zm-11.2 2l-10.6 3v14.5l10.6-3V113zm7 .5l-.4 1 .3.4.3-.7-.3-.8zm.8.8l-.3 1 .3.4.4-.5-.4-1zm-8.6 0v12.2l-9 2.6v-12l9-2.6zm6.8.5l-.3 1 .3.5.3-.6-.2-1zm1 1.5l-1 .6-.7 1v1.3l1.6-.5v3.9h-.5v-.3h-.2v.4l.3.2h.3l.3-.3.2-.2V119l1.8-.6-.3-1-.7-.8h-1zm-19 .3l-10.6 3V134l10.6-3v-14.4zm7.8.4l-.6 1.5h.3v5.8h.6v-6l.2-.2-.6-1zm-2 .6l-.7 1.5h.2v6l.6-.2v-6h.3l-.5-1.2zm-6.6.3v12l-9 2.6v-12l9-2.7zm-3 2.3l-3 1v4.7l1.3.4v2.7l-1.4 1.2 3-1-1.3-.2v-2.8l1.4-1v-5zm12.2 4.6l-3.3 1v.7l3.2-1v-.8z"/>{% endif %}
+  {% if symbols_left %}<path id="symbols_left" fill="{{ symbol_fill }}" d="M29 109.5v14.3l10.5 3.2v-14.4l-10.6-3zm.8 1.4l9 2.5v12l-9-2.5v-12zm11.2 2v14.4l10.6 3v-14.2l-10.6-3zm-8.4.3v4.8l1.4 1.2v2.7l-1.4.3 3.2 1-1.3-1.2v-2.7l1.3-.3v-4.8l-3.2-1zm9.2 1l9 2.7v12l-9-2.5v-12zm11.2 2.3V131l10.6 3v-14.3l-10.6-3zm-7.7.4l-.6 1 .3.2v6h.6v-5.8h.3l-.7-1.4zm2 .6l-.6 1 .3.2v6h.6V119h.3l-.7-1.4zm6.6.4l8.8 2.6v12l-9-2.6v-12zm4.5 2.6l-.3 1 .3.4.3-.3-.3-1zm-1 .8l-.3 1 .3.4.4-.3-.5-1zm2 .6l-.4.8.4.6.3-.4-.3-1zm-1 1.4h-1l-.6.8-.4 1.2 1.8.5V129.3l-.2.2h-.3l-.2-.3v-.3h-.2v.4l.2.3h.8V126l1.8.5-.2-1.3-.6-1.2-1-.6zM44.7 125v.7l3.2 1v-.8l-3.3-1z"/>{% endif %}
+  {% if boxed_left %}<g id="boxed_left">
+    <path fill="{{ boxed_background_fill }}" d="M58 102.7l-21-6.3v-23l21 6v23.3"/>
+    <path fill="{{ boxed_fill }}" d="M56.6 81l-18.3-5.4V95l18.3 5.3V81zm-1 1.2v5.2l-16.2-4.7v-5.3l16 4.8zm0 6.7v9.5l-16.2-4.8v-9.5l16 4.7zm-2.2 4H53l-.6-.2-.6-.2V96l.6.2.7.2h1c.3-.3.5-.8.5-1.3s-.2-1-.4-1.3c0-.3-.3-.5-.6-.6zm-2-.5H51l-1.2-.4h-.5v3.4h.5l1 .4c.4 0 .5 0 .7.2v-.8H51l-1-.4v-.6h.8c.2.2.3.3.5.3v-.7h-.5l-.8-.4v-.6l1 .3.5.3v-.8zm2 1.3v.2c.3.2.4.5.4 1 0 .2 0 .5-.3.6h-.9v-2h.4l.3.2zm-4.5-2l-1-.2-.2.5-.3.5-.2-.6-.3-.7-1-.3.5.7.6 1.2-.7 1-.3.4 1 .3v-.5l.5-.5.4.8v.6l1 .3-.3-.6-.7-1.5.6-1 .3-.4zm-4-1l-.4-.3c-.8-.2-1.4.4-1.4 1.5 0 1 .6 2 1.4 2 1 .4 1.4-.2 1.4-1.3 0-1-.4-1.7-1-2zm-.4.5c.4 0 .7.6.7 1.2 0 .7-.3 1-.7 1-.4-.2-.7-.7-.7-1.4 0-.5.2-1 .6-.7zM42.3 90H42l-1-.4h-.5V93h.5l1 .3c.6.2 1 0 1-.6 0-.3 0-.6-.3-.8 0-.2-.2-.2-.3-.3 0 0 .2 0 .2-.2.2 0 .2-.3.2-.5 0-.4 0-.7-.5-1zm-.3.6v.5L41 91v-.6h.6s0 .2.2.2zm0 1.3l.2.3c0 .3 0 .4-.3.3l-.8-.2v-.7l.7.2z"/>
+  </g>{% endif %}
+  {% if boxed_right %}<g id="boxed_right">
+    <path fill="{{ boxed_background_fill }}" d="M108.5 97l-21.2 6.3V80l21.2-6v23"/>
+    <path fill="{{ boxed_fill }}" d="M107 76.2l-18.2 5.4V101l18.2-5.4V76.2zm-1 2v5L90 88v-5.2l16-4.7zm0 6.6v9.6L90 99v-9.5l16-4.7zm-2 5.4h-.5l-.7.3h-.5v3.6h.5l.7-.3c.5 0 .8-.3 1-.7.3-.4.4-1 .4-1.4 0-.6-.2-1-.5-1.2 0-.2-.4-.2-.6-.2zm-2 .6c-.2 0-.4 0-.6.2l-1 .3c-.4 0-.5 0-.6.2V95l.5-.3 1-.3c.4 0 .5 0 .6-.2v-.7c-.2 0-.4 0-.6.2l-1 .3v-.7l.8-.3h.6v-1c-.2.2-.3.3-.6.3l-.7.3V92l1-.3h.4v-1zm1.8.2h.2l.2.8c0 .3 0 .6-.2.8 0 .2-.3.3-.5.4l-.5.2v-2l.5-.2h.3zm-4.4.6l-1 .3-.2.5-.2.6-.3-.4-.3-.4-.8.3.3.4.5.8-.7 1.5c0 .2-.2.3-.4.6l1-.4c0-.2 0-.3.2-.5l.4-.8.4.6c0 .2 0 .3.2.5l1-.3-.4-.4-.8-1L99 92l.4-.6zm-4 1.2H95c-.8.3-1.3 1.2-1.3 2.3 0 1.2.5 1.7 1.4 1.4 1-.2 1.5-1 1.5-2.2 0-1-.4-1.5-1-1.4zm-.3.8c.5-.2.8.2.8.8 0 .7-.3 1.2-.7 1.3-.4 0-.6-.2-.6-1 0-.5.2-1 .7-1zm-2.2 0h-.4l-1 .4-.4.2V97.6h.5l1-.4c.6-.2 1-.7 1-1.3 0-.3-.2-.6-.3-.7h-.4c.2 0 .2-.2.3-.3.2-.2.3-.4.3-.7 0-.4-.2-.6-.5-.6zm-.4.8c.2 0 .2 0 .2.3 0 .2 0 .4-.3.4l-.6.3v-.7h.6v-.2zm0 1.3c.2 0 .3 0 .3.3s-.2.5-.4.5l-.6.2V96l.6-.2h.2z"/>
+  </g>{% endif %}
+  {% if tape_left %}<path fill="{{ tape_fill }}" fill-opacity="{{ tape_opacity }}" d="M92 55.3L41.7 70v17.4l10 3V73l50.5-14.8-10.2-3z"/>{% endif %}
+  {% if tape_right %}<path fill="{{ tape_fill }}" fill-opacity="{{ tape_opacity }}" d="M52 55.3l-10 3L92.2 73v17.3l10-3V70L52 55.3z"/>{% endif %}
+  {% if open_top %}<g id="open_top">
+    <path fill="{{ inside_fill }}" d="M72 79l50.5-15L72 49.5z"/>
+    <path fill="{{ inside_dark_fill }}" d="M72 79V49.5L21.8 64.2z"/>
+  </g>{% endif %}
+  {% if west_up %}<g id="west_up">
+    <path fill="{{ flap_top_lite_fill }}" d="M72 49.7l-49 15-12.6-32.8 49-15.2z"/>
+    <path fill="{{ fill }}" d="M10.4 32L23 64.5l-.8-.2-.3.3L9.5 32.3l.8-.4"/>
+  </g>{% endif %}
+  {% if west_down %}<g id="west_down">
+    <path fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}" id="west_down_shadow_2" d="M2.7 75.5l19-5.6-2.3.6-13.4 4-3.3 1"/>
+    <path id="west_down_shadow" d="M22 65.7" fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}"/>
+    <g id="west_down_side">
+      <path fill="{{ flap_bottom_dark_fill }}" d="M22 65.7V70L.5 76 22 65.8"/>
+      <path fill="{{ fill }}" d="M22 65.2h.3v.3l-.4.2v-.5"/>
+      <path fill="{{ fill }}" d="M22 65.7L.5 76 0 75l22-10.6v1.5"/>
+      <path fill="{{ flap_bottom_dark_fill }}" d="M2 75.6v-.2l20-9.7V70h-.2l-19 5.5H2"/>
+    </g>
+  </g>{% endif %}
+  {% if west_middle %}<g id="west_middle">
+    <g id="west_middle_side">
+      <path d="M22.5 64.7l-21.3-23L51.5 27l20.8 22.4z" fill="{{ flap_east_west_lite_fill }}"/>
+      <path d="M22 65.4L.6 42.8l.5-1 21.5 22.8z" fill="{{ fill }}"/>
+    </g>
+  </g>{% endif %}
+  {% if north_up %}<g id="north_up">
+    <path id="north_up_shadow" fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}" d="M122.4 124c-.3-10.2 0-31.6 0-31.6L149 100c2.8 1 5.7 1.6 8.5 2.6v.3"/>
+    <g id="north_up_side">
+      <path d="M122.2 64.2l-.7.2 12.3-32.7 1 .4-12.3 32.5-.3-.3" fill="{{ dark_fill }}"/>
+      <path d="M72 49l12-32 49.8 14.7-12.3 32.7-49.8-14.7.3-.7" fill="{{ flap_south_dark_edge_fill }}"/>
+    </g>
+  </g>{% endif %}
+  {% if north_down %}<g id="north_down">
+    <path id="north_down_shadow" fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}" d="M122.5 131.7V104l32.2 7-32.2 13.2" />
+    <g id="north_down_side">
+      <path d="M122 64.7h.4v.4h-.5v-.3" fill="{{ dark_fill }}"/>
+      <path d="M144.2 74.2l-.5 1.3L122.4 65v-1l21.8 10.2" fill="{{ dark_fill }}"/>
+      <path d="M143.7 75.5l-21.3-6.2V65l21.3 10.5" fill="{{ flap_bottom_dark_fill }}"/>
+    </g>
+  </g>{% endif %}
+  {% if north_middle %}<g id="north_middle">
+    <g id="north_middle_side">
+      <path d="M72 49.5L92 27l50 13.3L121 64c-6.7-2.6-49-14.5-49-14.5z" fill="{{ flap_south_lite_fill }}"/>
+      <path d="M142 40.3l.5 1-21 23.6-.5-1z" fill="{{ dark_fill }}"/>
+    </g>
+    <path id="north_middle_shadow" d="M122.3 120.8v-29l40 11z" fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}"/>
+  </g>{% endif %}
+  {% if south_up %}<g id="south_up">
+      <g id="south_up_side">
+        <path fill="{{ dark_fill }}" d="M72 77.3l.5 1 .2.3-.7.3v1L62 59.4l-2.6-5.2 1-1v.3L72 77.3"/>
+        <path fill="{{ flap_bottom_dark_fill_2 }}" d="M9 39.5l2.6 5 9.7 20 .4.8h.4L72 80h.2L62 59.4l-2.6-5.2L9 39.5z"/>
+        <path fill="{{ flap_south_lite_fill }}" d="M59.4 54.2L9 39.5l1-1L59.7 53l.6.3-1 1"/>
+      </g>
+      {% if south_up_tape %}<path id="south_up_tape" fill="{{ tape_fill }}" fill-opacity="{{ tape_opacity }}" d="M11.6 44.6l-2.5-5L59.5 54l2.5 5.2-50.4-14.8"/>{% endif %}
+  </g>{% endif %}
+  {% if south_middle %}<g id="south_middle">
+    <path id="south_middle_shadow" fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}" d="M59.5 99.3C46.8 96 21.7 87.7 21.7 87.7V67.2v-1.6L72 80.4c-4 6.7-9 13.5-12.5 19"/>
+    <g id="south_middle_side">
+      <path fill="{{ flap_south_dark_edge_fill }}" d="M0 55l.6-1.3 19 5.6 1.3.4 8.8 2.6h.3l21 6.2-.5 1.3L0 55"/>
+      <path fill="{{ flap_bottom_dark_fill }}" d="M0 55L50.6 70l21.8 10.6-20.2-6-10-2.8-20-6L0 55.2"/>
+      <path fill="{{ dark_fill }}" d="M72.3 80.4L50.5 69.8l.5-1.3 18.3 9 2.3 1 .7.4v1.4"/>
+      <path fill="{{ flap_bottom_dark_fill }}" d="M72.2 80.4l-20-6-10-2.8-20.3-6-1.3-.5L9 59.4c-2.4-1-4.6-2.2-7-3.3-.3-.2-.7-.3-1-.6l49.5 14.4 21.7 10.6"/>
+      <path fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}" d="M72.2 80.4L50.5 69.8v-.2c1.3.5 2.5 1.2 3.7 1.8l7.8 3.8c2.3 1.2 4.7 2 7 3.4 1 .6 2.3 1 3.2 1.8"/>
+    </g>
+  </g>{% endif %}
+  {% if south_down %}<g id="south_down">
+  <path id="south_down_shadow" fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}" d="M72 79L21.8 64.2v55l38 11 11.4-48z"/>
+  <path id="south_down_shadow_floor" fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}" d="M11.7 127.7v-.2l10-4v7.2z"/>
+    <g id="south_down_side">
+      <path d="M22 64l.6.3 49 14.3.6.3L50.4 102 0 87.5l21.6-23 .3-.4" fill="{{ flap_south_lite_fill }}"/>
+      <path d="M72.2 80l.5-.2-.5.6V80" fill="{{ dark_fill }}"/>
+      <path d="M0 87.5l50.4 14.7.5 1L22 95 .5 88.6l-.5-1" fill="{{ flap_bottom_dark_fill_2 }}"/>
+      <path d="M51 103.3l-.6-1 21.8-23.4v1.4l-21.3 23" fill="{{ dark_fill }}"/>
+      <path d="M72.7 80h-.2l.2-.2" fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}"/>
+    </g>
+  </g>{% endif %}
+  {% if east_up %}<g id="east_up">
+    <path id="east_up_shadow" fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}" d="M72.2 80.4l50.2-14.7v10l-29 8.3z"/>
+    <g id="east_up_side">
+      <path fill="{{ flap_bottom_dark_fill }}" d="M135 40L84.5 54.7l-2.5 5-10 20.5.3.2h.2l49.7-14.6h.2l1-2.3 9-18.4 2.5-5z"/>
+      <path fill="{{ fill }}" d="M84.6 54.7l-2.5 5-10 20.8v-1l-.7-.3.3-.5.4-1L83.7 54v-.3l1 1"/>
+      <path fill="{{ flap_east_west_lite_fill }}" d="M135 40L84.5 54.7l-1-1h.8L134 39l1 1"/>
+    </g>
+    {% if east_up_tape %}<path id="east_up_tape" fill="{{ tape_fill }}" fill-opacity="{{ tape_opacity }}" d="M82 59.8l2.6-5L135 40l-2.6 5L82 60"/>{% endif %}
+  </g>{% endif %}
+  {% if east_middle %}<g id="east_middle">
+    <path id="east_middle_shadow" fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}" d="M109.6 120.8L72.2 80.4l50.2-14.6V117l-12.8 3.8"/>
+    <path id="east_middle_shadow_floor" fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}" d="M122.4 111.2l38 5 1 1.5-39 10.7"/>
+    <g id="east_middle_side">
+      <path d="M93.2 68.6l21-6 .2-.2 9-2.6 1-.4 19-5.5.6 1.2L93.7 70l-.5-1.4" fill="{{ flap_top_lite_fill }}"/>
+      <path d="M93.2 68.6l.5 1.3L72 80.5V79l.5-.3 2.4-1.2 18.2-9" fill="{{ fill }}"/>
+      <path d="M93.7 70L144 55l-21.8 10.6-20 6-10.2 3-20 5.8L93.6 70" fill="{{ flap_bottom_dark_fill }}"/>
+      <path d="M72 80.6l-.3-.6h.2v.6" fill="{{ fill }}"/>
+      <path d="M125.8 64l15.4-7.5-12 6-3.4 1.6m15.8-7.6l.3-.2c-.2 0-.3 0-.4.2" fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}"/>
+      <path d="M72.2 80.4c2.6-1.5 5.4-2.7 8-4 1.6-1 3.2-1.7 4.8-2.4 3-1.3 5.7-3 8.6-4.2L72.3 80.5" fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}"/>
+      <path d="M72.2 80.5l21.5-10.6L142 55.7h.2c0 .2-.2.3-.3.4l-.4.2h-.4l-15.4 7.7-1.5.8-2 1-20.2 6-10 3-19.8 5.7" fill="{{ flap_bottom_dark_fill }}"/>
+    </g>
+  </g>{% endif %}
+  {% if east_down %}<g id="east_down">
+    <path id="east_down_shadow"  fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}" d="M72 79c9.7 20.3 29.3 59.4 29.3 59.4l21-6.2V64z"/>
+    <path id="east_down_shadow_floor" fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}" d="M105 140.5h-.3c-1-.5-2-1-3-1.7l-.5-.5 21-6.2.2-27.7s27.7 17.5 33.5 21v.3c-2.3.8-4.6 1.4-7 2L107 140c-.8.2-1.4.5-2 .5"/>
+    <g id="east_down_side">
+      <path d="M72.7 78.5l49-14.4h.6l.3.2 21.5 23-50.2 15L72 78.6l.7-.2" fill="{{ flap_east_west_lite_fill }}"/>
+      <path d="M93.3 103L72 80.3v-1.5L93.8 102l-.5 1" fill="{{ fill }}"/>
+      <path d="M122.3 94.6l-29 8.5.5-1L144 87.4l-.4 1-21.3 6.3" fill="{{ flap_bottom_dark_fill }}"/>
+      <path d="M72 79.7v.5l-.5-.5h.5" fill="{{ fill }}"/>
+      <path d="M93.3 103L73 81.4c.5.2.8.7 1.2 1l3 3.3c1.6 1.8 3.4 3.4 5 5 1.6 2.3 3.8 4 5.5 6.2l3.6 3.8c.7.7 1 1.6 2 2l.4-.3-.4.8" fill-opacity="{{ shadow_opacity }}" fill="{{ shadow_fill }}"/>
+      <path d="M93.3 103l.4-.7s0-.2.2-.3l50-14.7-.4 1-21.3 6.3-29 8.5" fill="{{ flap_bottom_dark_fill }}"/>
+    </g>
+  </g>{% endif %}
+</svg>

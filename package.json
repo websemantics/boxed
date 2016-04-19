@@ -1,0 +1,26 @@
+{
+  "name": "websemantics-boxed",
+  "version": "0.2.1",
+  "homepage": "https://websemantics.io",
+  "description": "A lightweight boilerplate generator that does not require the command-line interface (CLI) to customize software addons and packages for the visually-oriented developers.",
+  "author": "Adnan M.Sagar, PhD. <adnan@websemantics.ca>",
+  "license" : "MIT",
+  "keywords": [
+    "ibuild.io",
+    "websemantics.io",
+    "generator",
+    "templater",
+    "scaffolder"
+  ],
+  "scripts": {
+    "postinstall": "gulp"
+  },
+  "repository": "websemantics/boxed",
+  "bugs": {
+    "url": "https://github.com/websemantics/boxed/issues"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-svg-smart": "*"
+  }
+}

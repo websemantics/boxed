@@ -1,0 +1,10 @@
+script: bash ./deploy.sh
+language: node_js
+node_js:
+  - "0.10"
+before_script:
+  - npm install -g bower
+env:
+  global:
+  - GH_REF: github.com/websemantics/boxed.git
+  - secure: n/nSeXJA+DfmL+fhzgP+BxEzDLJe7D1QakLfLNynO/PVPGSg1Y/vSqyTIH9JJV3fxGhgkPbc1Iu9WiDbEDAIvBO7PCnLPbCwB51mFmUMLnHHci6eQWA40Pz4ivmyTaJD5MDfv5mfOO+fl8W7LNGRat/RjgNUm4q655NNHCfIlg3LXCGyFqQbtm4DrIcWKoCVLZKg2Os/nB2C6qpUQGJa97E3DI9zNnC+NT2MY0b6iSPT7LV/DzP67zN5NDZcEzOxBVOLuXnBpR04wf/WV5KDXYJhYSvgIC3F+70ti8oe4Zkf68jH1BM1nMFp98K5y5QBWGyToGaZ4NpIStc6dzD08+r0GcR4Cn4/4SIfzlgCE0VeGi0tuCS+hbNMhqP9RvbuA7qiqXsjjFlJxLomWx0YvUynnqy9MjHZEujnyqDPDJk8K70fYo8BH2g4TpQ/OfOFf6Cd4465oxLrctdGj9HXtFBeMVAC0coRLBn3QAKkZrqVOsb4lp2kvbgGATFZSNzKy1mrtQgw+SRIYPZm6REyh0QKE/wye/toI51DLsHjPt9xvIbeyX2X8sDGsczBgEhuMrnlP0cSOvytYI1m7E5e1TH+/41cdy+IgD9OWO6SyZQl/hYzwu9KNdLlYejAdN5J6ihWC57ScSGZp9c1qgZyJGNKtwFSB/8dB+6FCmX4jIc=

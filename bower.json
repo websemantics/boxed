@@ -1,0 +1,17 @@
+{
+  "name": "Boxed",
+  "version": "0.2.1",
+  "homepage": "https://github.com/websemantics/boxed",
+  "authors": [
+    "Adnan M.Sagar, PhD. <adnan@websemantics.ca>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/semantic"
+  ],
+  "dependencies": {
+    "semantic" : "*"
+  }
+}

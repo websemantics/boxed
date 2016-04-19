@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Boxed : Customize Your Addons">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/alpaca.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/item.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/alpaca.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/item.min.css">
 
     <title>Boxed : Customize & Go</title>
 
@@ -47,7 +47,7 @@
         <header class="inner">
             <div class="icon">
                 <a href="https://github.com/websemantics/boxed">
-                  <img src="img/boxed-logo.svg">
+                  <img src="assets/img/boxed-logo.svg">
                 </a>
             </div>
             <div class="text">
@@ -64,7 +64,7 @@
                 <a class="github-button" href="https://github.com/websemantics/boxed" data-icon="octicon-star" data-count-href="/websemantics/boxed/stargazers" data-count-api="/repos/websemantics/boxed#stargazers_count">Star</a>
 
                 <a class="github-button" href="https://github.com/websemantics/boxed" data-icon="octicon-git-branch" data-count-href="/websemantics/boxed/network" data-count-api="/repos/websemantics/boxed#forks_count">Fork</a>
-            
+
               <!-- Begin MailChimp Signup Form -->
 
           <!-- <div style="padding-top:20px">
@@ -78,7 +78,7 @@
           <div id="mc_embed_signup">
           <form action="//websemantics.us10.list-manage.com/subscribe/post?u=e988a8826df50e9c6db6938d5&amp;id=2c45d0328d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
               <div id="mc_embed_signup_scroll">
-            
+
             <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required>
             <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
               <div style="position: absolute; left: -5000px;"><input type="text" name="b_e988a8826df50e9c6db6938d5_2c45d0328d" tabindex="-1" value=""></div>
@@ -116,7 +116,7 @@
             <form></form>
 
             <div class="gen-footer">
-            
+
             <div class="progress">
               <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
                 0%
@@ -160,7 +160,7 @@
         })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    
+
 
 
       </section>
@@ -173,18 +173,18 @@
                         </a></p>
             </footer>
           </div>
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/handlebars.min.js"></script>
-  <script type="text/javascript" src="js/ace/ace.js"></script>
-  <script type="text/javascript" src="js/alpaca.min.js"></script>
-  <script type="text/javascript" src="js/inflection.js"></script>
-  <script type="text/javascript" src="js/zipjs/zip.js"></script>
-  <script type="text/javascript" src="js/github.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/handlebars.min.js"></script>
+  <script type="text/javascript" src="assets/js/ace/ace.js"></script>
+  <script type="text/javascript" src="assets/js/alpaca.min.js"></script>
+  <script type="text/javascript" src="assets/js/inflection.js"></script>
+  <script type="text/javascript" src="assets/js/zipjs/zip.js"></script>
+  <script type="text/javascript" src="assets/js/github.js"></script>
   <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
   <script type="text/javascript" src="repos.json"></script>
-  <script src="js/github.js"></script>
+  <script src="assets/js/github.js"></script>
 
   <script>
 
@@ -215,7 +215,7 @@
    var current_form = null;
 
    $( document ).ready(function() {
-      
+
       $('#package').hide();
       $('#download').hide();
       $('#generate').prop('disabled', true);
@@ -226,7 +226,7 @@
 
       // On change, set the current repo
       $( "#repos" ).change(function(event) {
-        
+
         current_repo_id = this.value;
         current_repo = repos[current_repo_id];
 
@@ -235,21 +235,21 @@
           $('#download').hide();
           $('#package').hide();
           $('#generate').prop('disabled', true);
-          $('.progress-bar').css('width', '0%').attr('aria-valuenow', 0).text('0%');    
+          $('.progress-bar').css('width', '0%').attr('aria-valuenow', 0).text('0%');
 
         if(current_repo){
           $('#package').show();
           $('#details').html(template(current_repo));
           $('#generate').prop('disabled', false);
           current_form = $('form').alpaca(current_repo.form);
-        } 
+        }
 
       });
     });
 
    // Download handler
    $('#generate').on('click', function(event) {
-  
+
       _gaq.push(['_trackEvent', 'Packages', 'Generate']);
 
       var box = new Boxed(repos_files[current_repo_id], current_repo, current_form);
@@ -263,14 +263,14 @@
 
         $.getJSON(file, {file:file})
           .done(function( repo ) {
-            
+
             // Set default values
             var repo_url_parts =  repo.github_url.split("/");
             var len = repo_url_parts.length;
 
             repo.user      = repo_url_parts[len-2];
             repo.repo_name = repo_url_parts[len-1];
-            repo.img_url   = repo.img_url || 'img/box-bw.svg';
+            repo.img_url   = repo.img_url || 'assets/img/box-bw.svg';
             repo.branch    = repo.branch || 'master';
             repo.path      = repo.path || "./";
             repo.accept    = repo.accept || "*";
@@ -283,7 +283,7 @@
             repos[file_name] = repo;
 
             // Insert new select option
-            $('#repos').append($("<option></option>").attr("value",file_name).text(repo.label)); 
+            $('#repos').append($("<option></option>").attr("value",file_name).text(repo.label));
 
           })
           .fail(function( jqxhr, textStatus, error ) {
